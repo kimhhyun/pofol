@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/exhibition.css">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- 스무스 스크롤바 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+  <!--  aos 라이브러리  -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--gsap-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- 로데쉬 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+
+  <!--  구글 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <title>Exhibition</title>
+</head>
+
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-shadow"></div>
+
+  <div class="wrap">
+    <section id="header_txt">
+      <div class="logobar">
+        <div class="logo"><a href="art gallery.html">MONE</a></div>
+      </div>
+      <div class="menubar">
+        <ul>
+          <li><a href="#">전시</a></li>
+          <li><a href="#">방문</a></li>
+          <li><a href="#">소장품</a></li>
+          <li><a href="#">미술연구</a></li>
+          <li><a href="#">디지털 미술관</a></li>
+        </ul>
+      </div>
+      <div class="hide_menubar">
+        <hr class="opacity-20">
+        <p>
+          <br> 서울 모네 미술관에 오신 것을 환영합니다. <br><br>
+          <i class="fa-solid fa-house"></i> &nbsp;운영 시간 10:00 - 18:00
+        </p>
+        <div class="hide_menubar_wrap">
+          <ul>
+            <li>
+              <ul>
+                <li><a href="">현재전시</a></li>
+                <li><a href="">예정전시</a></li>
+                <li><a href="">지난전시</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">오시는 길</a></li>
+                <li><a href="">대중교통</a></li>
+                <li><a href="">시설대관</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">신 소장품</a></li>
+                <li><a href="">소장품 대여</a></li>
+                <li><a href="">소장품 기증</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">참고도서</a></li>
+                <li><a href="">발간자료</a></li>
+                <li><a href="">연구기록</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">VR미술관</a></li>
+                <li><a href="">오디오 가이드</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="icon_box">
+          <a href="#" class="dotbo"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <span><i class="fa-solid fa-user"></i></span>
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+      <div class="hide_side_bar hide_search_bar">
+        <div class="search_bar">
+          <input type="text" placeholder="검색어를 입력하세요">
+          <button class="search-button">검색</button>
+        </div>
+      </div>
+      <div class="hide_side_bar hide_menu_bar">
+        <button class="close_menu_bar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="hide-menu-1">
+            <ul class="regular-menu">
+                <li><span>소개</span></li>
+                <li><a href="#">미술관 소개</a></li>
+                <li><a href="#">설립 이념.건축</a></li>
+                <li><a href="#">관람 안내</a></li>
+                <li><a href="#">우리 미술관?</a></li>
+                <hr class="side-hr">
+                <li><span>전시</span></li>
+                <li><a href="#">현재 전시</a></li>
+                <li><a href="#">지난 전시</a></li>
+                <li><a href="#">예정 전시</a></li>
+                <li><a href="#">도록</a></li>
+                <hr class="side-hr">
+                <li><span>프로그램</span></li>
+                <li><a href="#">상설교육</a></li>
+                <li><a href="#">특별교육</a></li>
+                <li><a href="#">부대 행사</a></li>
+                <li><a href="#">방문 행사</a></li>
+                <hr class="side-hr">
+                <li><span>소식</span></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">연간기부금내역</a></li>
+                <li><a href="#">실적 내역</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+            <ul class="accordion">
+                <li>
+                    <a class="accordion-header" href="#">
+                        소개
+                        <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+                    </a>
+                    <ul class="accordion-content">
+                        <li><a href="#">미술관 소개</a></li>
+                        <li><a href="#">설립 이념.건축</a></li>
+                        <li><a href="#">관람 안내</a></li>
+                        <li><a href="#">우리 미술관?</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="accordion-header" href="#">
+                        전시
+                        <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+                    </a>
+                    <ul class="accordion-content">
+                        <li><a href="#">현재 전시</a></li>
+                        <li><a href="#">지난 전시</a></li>
+                        <li><a href="#">예정 전시</a></li>
+                        <li><a href="#">도록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="accordion-header" href="#">
+                        프로그램
+                        <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+                    </a>
+                    <ul class="accordion-content">
+                        <li><a href="#">상설교육</a></li>
+                        <li><a href="#">특별교육</a></li>
+                        <li><a href="#">부대 행사</a></li>
+                        <li><a href="#">방문 행사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="accordion-header" href="#">
+                        소식
+                        <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+                    </a>
+                    <ul class="accordion-content">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">연간기부금내역</a></li>
+                        <li><a href="#">실적 내역</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+      <div id="header_box"></div>
+      <div class="overlay"></div>
+      <div class="my-page">
+        <div class="top-my">
+          <h1>ART GALLERY</h1>
+          <form action="">
+            <div class="int-box"></div>
+            <div class="int-area">
+              <input type="text" name="id" id="id" autocomplete="off" required>
+              <label for="id">아이디</label>
+            </div>
+            <div class="int-area">
+              <input type="text" name="id" id="id" autocomplete="off" required>
+              <label for="pw">비밀번호</label>
+            </div>
+            <div class="btn-int">
+              <button type="submit">로그인</button>
+            </div>
+          </form>
+          <div class="caption">
+            <a href="#">비밀번호를 잊으셨나요 ?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-1">
+      <div class="top-n">
+        <a href="#" class="ft-40 bd"><span>전시</span></a>
+      </div>
+      <div class="mid-n">
+        <div class="mid-sear">
+          <div class="mid-sear-1">
+            <input type="text" class="search-input" placeholder="검색어를 입력하세요...">
+            <a href="#" class="ft-20"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          <div class="mid-sear-2">
+            <a href="#">검색</a>
+          </div>
+        </div>
+        <div class="mid-nbar">
+          <div class="mid-nbar-1">
+            <div class="mid-btn-bar">
+              <span>전체</span>
+            </div>
+            <div class="mid-btn-bar">
+              <span>진행중 </span>
+            </div>
+            <div class="mid-btn-bar">
+              <span>예정전시</span>
+            </div>
+            <div class="mid-btn-bar">
+              <span>과거전시</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="mid-box">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2" id="section-2-1">
+      <div class="grid_con grid_con_1">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="grid_con grid_con_2">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+
+      </div>
+      <div class="grid_con grid_con_3">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="page_num">
+        <div class="num_con">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </div>
+    </section>
+    <section class="section-2" id="section-2-2">
+      <div class="grid_con grid_con_1">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="grid_con grid_con_2">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+
+      </div>
+      <div class="grid_con grid_con_3">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="page_num">
+        <div class="num_con">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </div>
+    </section>
+    <section class="section-2" id="section-2-3">
+      <div class="grid_con grid_con_1">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="grid_con grid_con_2">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+
+      </div>
+      <div class="grid_con grid_con_3">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="page_num">
+        <div class="num_con">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </div>
+    </section>
+    <section class="section-2" id="section-2-4">
+      <div class="grid_con grid_con_1">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="grid_con grid_con_2">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+
+      </div>
+      <div class="grid_con grid_con_3">
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://file.newswire.co.kr/data/datafile2/thumb_640/2023/06/1846260943_20230622105758_2248298315.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">생각 지상주의자들의 요람</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.mhns.co.kr/news/photo/202210/537203_651941_5159.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">상생</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/09/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98%EB%AF%B8%EC%88%A0%EA%B4%80-re_Sense-%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Re:Sense</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://www.semyung.ac.kr/cmm/fms/FILE_000000000136610/getImage.do?atchFileId=FILE_000000000136610&fileSn=0&kind=920"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">PERMEATE:스며듬</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.academicnews.co.kr/news/photo/202210/4139_4628_1035.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">Orbit, Our Beat</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.dailycc.net/news/photo/201910/556739_448097_4642.jpg" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">그림책, 당신의 시간</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img
+              src="https://museumnews.kr/wp-content/uploads/2018/08/%EC%A0%84%EC%8B%9C%ED%8F%AC%EC%8A%A4%ED%84%B02.jpg"
+              alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">아리랑 고개 너머</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+        <div class="grid_box">
+          <a href="#" class="img_box cursor-big">
+            <img src="https://cdn.koreadisablednews.com/news/photo/202310/9865_8037_1716.png" alt="">
+          </a>
+          <a href="#" class="txt_box">
+            <p class="ft-20">2023 유니버셜 디자인</p>
+            <p class="ft-15">2024.08.12~09.11</p>
+          </a>
+        </div>
+      </div>
+      <div class="page_num">
+        <div class="num_con">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div id="inner">
+      <div class="footer_inner">
+        <div class="footer_top">
+          <div class="lt-bot">
+            <div class="bot-1">MONE</div>
+            <div class="bot-2">
+              <span>상호 : 아트앤갤러리 | 대표자 : 남승연, 김학현 | 개인정보 <br>
+                사업자등록번호 : 000-00-00000 | 이메일 : help@ddadada.me <br>
+                주소 : 대전시 서구 민초로8길 56-1
+              </span>
+            </div>
+            <hr class="bot-hr">
+            <div class="bot-3">
+              Copyright <i class="fa-regular fa-copyright"></i> 아트앤갤러리
+            </div>
+          </div>
+          <div class="rt-bot">
+            <div class="rt-bot-con_1">
+              <div class="r-bot-1">
+                <span>
+                  <a href="#">
+                    <span>위젯</span>
+                    <span>튜토리얼</span>
+                    <span>CODE</span>
+                    <span>EXTRA</span>
+                  </a>
+                </span>
+              </div>
+              <div class="r-bot-2">
+                <span>
+                  <a href="#">
+                    <span>이용약관</span>
+                    <span class="b-30">개인정보처리방침</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="rt-bot-con_2">
+              <span class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </span>
+              
+                <div class="icon-btn">
+                  <span>관련사이트</span>
+                  <div class="btn-cont">
+                    <ul>
+                      <li><a href="#">아트센터 대전</a></li>
+                      <li><a href="#">아트센터 서울</a></li>
+                      <li><a href="#">아트갤러리홀</a></li>
+                      <li><a href="#">멤버십 제휴</a></li>
+                      <li><a href="#">저작권</a></li>
+                    </ul>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="bot-5">
+          </div>
+          Copyright <i class="fa-regular fa-copyright"></i> 아트앤갤러리
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <button class="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+  <script>
+
+    // 초기 시작시 화면 페이드인
+    $(window).on('load', function () {
+      $('body').css('opacity', '1');
+    });
+
+
+    // 커서 효과
+    const $cursor = $('.cursor');
+    const $cursorShadow = $('.cursor-shadow');
+    
+    // 현재 mousemove 이벤트 핸들러를 최적화
+    $(window).on('mousemove', function (e) {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      
+      // 성능을 위해 requestAnimationFrame 사용
+      window.requestAnimationFrame(function () {
+        $cursor.css({
+          top: mouseY,
+          left: mouseX
+        });
+
+        $cursorShadow.css({
+          top: mouseY,
+          left: mouseX
+        });
+      });
+    });
+
+    // 커서 확대 효과
+    $('.cursor-big').on('mouseenter', function () {
+      $('html').addClass('need-to-cursor-big');
+    });
+    $('.cursor-big').on('mouseleave', function () {
+      $('html').removeClass('need-to-cursor-big');
+    });
+
+
+
+    
+    //  top 버튼 클릭시 최상단 이동 코드
+    $(document).ready(function () {
+      // 버튼 초기 상태를 숨김
+      $('.top-btn').hide();
+
+      // 스크롤 이벤트 리스너
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) { // 스크롤 위치가 100px 이상일 때
+          $('.top-btn').stop().fadeTo(100, 1); // 600ms 동안 점차적으로 보이게 함
+        } else {
+          $('.top-btn').stop().fadeTo(100, 0); // 600ms 동안 점차적으로 숨김
+        }
+      });
+
+      // 버튼 클릭 이벤트 리스너
+      $('.top-btn').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 600); // 600ms 동안 최상단으로 스크롤
+      });
+    });
+
+
+
+
+  // top 버튼 위치 조정 시작
+    
+    $(document).ready(function() {
+      var $topBtn = $('.top-btn');
+      var $footer = $('.footer');
+
+      function updateButtonPosition() {
+        var footerOffsetTop = $footer.offset().top;
+        var windowHeight = $(window).height();
+        var buttonTop = '90%'; // 기본 버튼 위치
+
+        // 푸터가 보이는지 확인
+        if (footerOffsetTop <= windowHeight + $(window).scrollTop()) {
+          buttonTop = '58%'; // 푸터가 보일 때 버튼 위치
+        }
+
+        $topBtn.css('top', buttonTop);
+      }
+
+      // 스크롤 이벤트에 따라 버튼 위치 업데이트
+      $(window).on('scroll', updateButtonPosition);
+
+      // 페이지 로드 시 초기 위치 확인
+      updateButtonPosition();
+    });
+
+  // top 버튼 위치 조정 끝
+
+
+
+
+
+
+
+
+   //숨은 메뉴바 나오는 효과
+            $(document).ready(function () {
+      $(document).ready(function () {
+        $('.menubar').hover(
+          function () {
+            $('.hide_menubar').addClass('active');
+            if ($('.dark-overlay').length === 0) {
+              $('body').append('<div class="dark-overlay"></div>');
+            }
+            $('.dark-overlay').fadeIn();
+          },
+          function () {
+            if (!$('.hide_menubar').is(':hover')) {
+              $('.hide_menubar').removeClass('active');
+              $('.dark-overlay').fadeOut(function () {
+                $(this).remove();
+              });
+            }
+          }
+        );
+        $('.hide_menubar').mouseleave(function () {
+          $('.hide_menubar').removeClass('active');
+          $('.dark-overlay').fadeOut(function () {
+            $(this).remove();
+          });
+        });
+      });
+    });
+
+
+
+
+
+
+
+    /* 사이드 바 오버레이 마이페이지 */
+
+    $(document).ready(function () {
+        // 요소 선택
+        var $myPage = $('.my-page');
+        var $searchSidebar = $('.hide_search_bar');
+        var $menuSidebar = $('.hide_menu_bar');
+        var $overlay = $('.overlay');
+        var $sidebarToggle = $('.fa-bars');
+        var $closeButton = $('.close_menu_bar');
+        var $searchIcon = $('.sidebar a').eq(0);
+        var $menuIcon = $('.sidebar a').eq(2);
+        var $sidebarLinks = $('.sidebar a');
+        var $userIcon = $('.fa-user');
+
+        // 마이페이지의 가시성 전환
+        $userIcon.on('click', function (e) {
+          e.preventDefault();
+          $myPage.toggle();
+          $overlay.toggleClass('active'); // 오버레이 토글
+        });
+
+        // 마이페이지 외부 클릭 시 숨기기
+        $(document).on('click', function (e) {
+          var $target = $(e.target);
+
+          // 마이페이지가 보이고, 클릭한 요소가 마이페이지와 사용자 아이콘이 아닐 때
+          if ($myPage.is(':visible') && !$target.closest('.my-page').length && !$target.closest('.fa-user').length) {
+            $myPage.hide();
+            $overlay.removeClass('active'); // 오버레이 숨기기
+          }
+
+          // 검색 사이드바가 열려 있고, 클릭한 요소가 검색 사이드바와 사이드바가 아닐 때
+          if ($searchSidebar.hasClass('active') && !$target.closest('.hide_search_bar').length && !$target.closest('.sidebar').length) {
+            $searchSidebar.removeClass('active');
+            $overlay.removeClass('active');
+            $('body').removeClass('no-scroll');
+          }
+
+          // 메뉴 사이드바가 열려 있고, 클릭한 요소가 메뉴 사이드바와 사이드바가 아닐 때
+          if ($menuSidebar.hasClass('active') && !$target.closest('.hide_menu_bar').length && !$target.closest('.sidebar').length) {
+            $menuSidebar.removeClass('active');
+            $overlay.removeClass('active');
+            $('body').removeClass('no-scroll');
+          }
+        });
+
+        // 마이페이지 내부 클릭 방지
+        $myPage.on('click', function (e) {
+          e.stopPropagation(); // 마이페이지 내부 클릭이 문서로 전파되지 않도록 방지
+        });
+
+        // 마이페이지 닫기 버튼 클릭 시
+        $closeButton.on('click', function () {
+          $myPage.hide();
+          $overlay.removeClass('active'); // 오버레이 숨기기
+        });
+
+        // 사이드바 및 오버레이 전환 함수
+        function toggleSidebar(sidebar, iconToHighlight) {
+          sidebar.toggleClass('active');
+          $overlay.toggleClass('active');
+
+          // 아이콘 색상 관리
+          $sidebarLinks.removeClass('active'); // 모든 아이콘의 색상 초기화
+          iconToHighlight.addClass('active'); // 클릭된 아이콘 강조
+
+          // 사이드바가 열려 있을 때 스크롤 비활성화
+          $('body').toggleClass('no-scroll', $searchSidebar.hasClass('active') || $menuSidebar.hasClass('active'));
+        }
+
+        // 검색 사이드바 토글
+        $searchIcon.click(function (e) {
+          e.preventDefault(); // 기본 링크 동작 방지
+
+          toggleSidebar($searchSidebar, $searchIcon);
+
+          // 메뉴 사이드바가 열려 있으면 닫기
+          $menuSidebar.removeClass('active');
+        });
+
+        // 메뉴 사이드바 토글
+        $menuIcon.click(function (e) {
+          e.preventDefault(); // 기본 링크 동작 방지
+
+          toggleSidebar($menuSidebar, $menuIcon);
+
+          // 검색 사이드바가 열려 있으면 닫기
+          $searchSidebar.removeClass('active');
+        });
+
+        // 오버레이 클릭 시 사이드바 및 마이페이지 닫기
+        $overlay.on('click', function () {
+          $searchSidebar.removeClass('active');
+          $menuSidebar.removeClass('active');
+          $myPage.hide(); // 마이페이지도 닫기
+          $overlay.removeClass('active');
+          $('body').removeClass('no-scroll');
+          $sidebarLinks.removeClass('active');
+        });
+
+        // 사이드바 닫기 버튼 클릭 시
+        $('.close_menu_bar').on('click', function () {
+          $menuSidebar.removeClass('active');
+          $overlay.removeClass('active');
+          $('body').removeClass('no-scroll');
+        });
+
+        // 헤더 박스 슬라이드 다운 애니메이션
+        $('#header_box').css('display', 'none').slideDown(1000);
+
+        // 페이지 로드 시 헤더 텍스트 색상 변경 애니메이션
+        $('#header_txt').css('color', 'white');
+
+        // 배너 이미지 스케일 다운 및 밝기 조정
+        $('#section-1 .banner img').css({
+          'filter': 'brightness(60%)'
+        });
+        setTimeout(function () {
+          $('#section-1 .banner img').css({
+            'transform': 'scale(1)',
+            'filter': 'brightness(80%)'
+          });
+        }, 800);
+
+        // 사이드바 토글 버튼 클릭 시 사이드바와 오버레이 처리
+        $sidebarToggle.on('click', function () {
+          $menuSidebar.toggleClass('active');
+          $overlay.toggleClass('active');
+        });
+      });
+
+    // section-2에 관련한 js 시작
+    $(document).ready(function () { // 페이지 로드 시
+      $(".section-2").hide();
+      $(".section-2").eq(0).show();  // 모든 section-2를 숨기고 첫 번째만 표시
+      $(".mid-btn-bar").eq(0).css({
+        "background-color": "black",
+        "color": "white"
+      });
+
+      $(".mid-btn-bar").each(function (index) {
+        $(this).on("click", function () { // .mid-btn-bar를 클릭했을 때
+          $(".section-2").hide();  // 모든 section-2를 숨기고
+          $(".section-2").eq(index).show();  // 해당하는 section-2만 표시
+          activatePage(0);  // 해당 section-2의 첫 번째 페이지를 활성화
+
+          $(".mid-btn-bar").css({
+            "background-color": "",
+            "color": ""
+          });    // 모든 버튼을 원래 상태로 초기화
+          $(this).css({
+            "background-color": "black",
+            "color": "white"
+          });   // 클릭된 버튼의 CSS를 변경
+        });
+      });
+
+      // 그리드 컨테이너 페이지네이션 기능
+      function activatePage(index) {
+        var activeSection = $(".section-2:visible");  // 현재 표시된 section-2
+        activeSection.find(".grid_con").hide(); // 모든 페이지를 숨기고
+        activeSection.find(".grid_con").eq(index).css("display", "grid");  // 선택한 페이지만 보이게
+        activeSection.find(".page_num .num_con span").removeClass("active"); // 모든 페이지 번호의 활성화 상태 제거
+        activeSection.find(".page_num .num_con span").eq(index).addClass("active"); // 선택한 페이지 번호를 활성화
+      }
+
+      $(".page_num .num_con span").each(function (index) {
+        $(this).on("click", function () {
+          activatePage(index);
+        });  // 페이지 번호 클릭 이벤트 설정
+      });
+
+      activatePage(0);  // 초기 상태로 첫 번째 section-2의 첫 번째 페이지 활성화
+    });
+    // section-2에 관련한 js 끝
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    // 이미지 버튼 슬라이드
+    const $pages = $('.page');
+    const totalPages = $pages.length;
+    let currentPage = 0;
+
+    function showPage(index) {
+      if (index < 0 || index >= totalPages) return; // 페이지 범위 체크
+      $pages.css('transform', `translateX(${-index * 100}%)`);
+      $('.pagination a').removeClass('active');
+      $(`.pagination a[data-page="${index}"]`).addClass('active');
+      currentPage = index;
+    }
+
+    // 페이지 번호 생성
+    for (let i = 0; i < totalPages; i++) {
+      $('.pagination').append(`<li><a href="#" data-page="${i}">${i + 1}</a></li>`);
+    }
+
+    // 페이지 번호 클릭 이벤트
+    $('.pagination').on('click', 'a', function (e) {
+      e.preventDefault();
+      const pageIndex = $(this).data('page');
+      showPage(pageIndex);
+    });
+
+    // 페이지 전환 시 범위 체크
+    $('.pagination').on('click', '.prev', function (e) {
+      e.preventDefault();
+      if (currentPage > 0) showPage(currentPage - 1);
+    });
+
+    $('.pagination').on('click', '.next', function (e) {
+      e.preventDefault();
+      if (currentPage < totalPages - 1) showPage(currentPage + 1);
+    });
+
+    // 첫 페이지 표시
+    showPage(currentPage);
+
+    // 관련 사이트 버튼 클릭
+    $('.icon-btn').on('click', function () {
+      var $btnCont = $('.btn-cont');
+
+      if ($btnCont.hasClass('visible')) {
+        // 숨기기
+        $btnCont.removeClass('visible').hide(); // 애니메이션이 끝나면 display를 none으로 설정
+      } else {
+        // 표시하기
+        $btnCont.show().addClass('visible'); // display를 block으로 설정 후 애니메이션 적용
+      }
+    });
+
+  
+</script>
+
+
+</body>
+
+</html>

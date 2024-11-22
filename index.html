@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="js lenis lenis smooth" style="overflow-x: hidden;">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+	<meta name="description" content="Demo of a morphing shape animation on scroll." />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/eay5gla.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script>document.documentElement.className = "js"</script>
+	<!-- 제이쿼리 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<!-- 폰트어썸 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	<!--  aos 라이브러리  -->
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- 로딩 페이지 -->
+	<!-- <div class="loading-container" id="loading">
+		<span class="txt1">KIMHAKHYUN'S</span>
+		<span class="txt2">PORTFOLIO</span>
+		<div class="bar"></div>
+</div> -->
+	<div class="pagination">
+		<div class="page-item" data-section=".header">
+			<div class="circle"></div>
+			<span>HOME</span>
+		</div>
+		<div class="page-item" data-section=".about">
+			<div class="circle"></div>
+			<span>ABOUT ME</span>
+		</div>
+		<div class="page-item" data-section="#item-1">
+			<div class="circle"></div>
+			<span>WORK</span>
+		</div>
+		<div class="page-item" data-section="#item-3">
+			<div class="circle"></div>
+			<span>MAIN WORK</span>
+		</div>
+		<div class="page-item" data-section=".section-2">
+			<div class="circle"></div>
+			<span>SUB WORK</span>
+		</div>
+		<div class="page-item" data-section=".section-4">
+			<div class="circle"></div>
+			<span>CONTACT</span>
+		</div>
+	</div>
+
+	<!-- 컨텐츠 페이지  -->
+	<main>
+		<div class="wrap">
+			<!-- 메인페이지  -->
+			<section class="header">
+				<div class="menu-bar">
+					<div class="logo ft-40 ft-bd">
+						<a href="#">HAKHYUN.K</a>
+					</div>
+						<div class="solid-bar ft-30 open">
+						<a href="#"><i class="fa-solid fa-bars"></i></a>
+					</div>
+				</div>
+
+				<div class="main-txt ft-75 ft-bd" id="text1">
+					UX/UI DEVELOPER
+				</div>
+				<div class="main-txt-2 ft-65 ft-bd" id="text2">
+					HAKHYUN.K
+				</div>
+				<div class="card">
+				</div>
+
+				<div class="cube">
+					<div class="face front ft-65 ft-bd">
+						UX/UI
+					</div>
+					<div class="face back ft-65 ft-bd">
+						FIGMA
+					</div>
+					<div class="face left ft-65 ft-bd">
+						HTML
+					</div>
+					<div class="face right ft-65 ft-bd">
+						CSS
+					</div>
+					<div class="face top ft-65 ft-bd">
+						JAVA <br> SCRIPT
+					</div>
+					<div class="face bottom ft-65 ft-bd">
+						JQUERY
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- 메뉴 열림 페이지  -->
+		<div class="Menu">
+			<div class="close-btn ft-40">
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+			<ul class="Menu-list" data-offset="10">
+				<li class="Menu-list-item" data-offset="20" onclick>
+					<a href="index.html">Home</a>
+					<span class="Mask"><span>Home</span></span>
+					<span class="Mask"><span>Home</span></span>
+				</li>
+				<li class="Menu-list-item" data-offset="16" onclick>
+					<a href="about">About</a>
+					<span class="Mask"><span>About</span></span>
+					<span class="Mask"><span>About</span></span>
+				</li>
+				<li class="Menu-list-item" data-offset="12" onclick>
+					<a href="section-1">Work</a>
+					<span class="Mask"><span>Work</span></span>
+					<span class="Mask"><span>Work</span></span>
+				</li>
+				<li class="Menu-list-item" data-offset="8" onclick>
+					<a href="section-5">Contact</a>
+					<span class="Mask"><span>Contact</span></span>
+					<span class="Mask"><span>Contact</span></span>
+				</li>
+			</ul>
+		</div>
+		<div class="about">
+			<div class="about-bg"></div>
+			<div class="about-lt">
+				<p class="ft-60 ft-bd" data-aos="fade-right">About me</p>
+				<div class="about-lt-1" data-aos="fade-left">
+					<img src="img/aboutme.png" alt="character">
+				</div>
+			</div>
+			<div class="about-rt">
+				<div class="profile"  data-aos="fade-up">
+					<ul>
+						<li>이름 : 김학현</li>
+						<li>나이 : 26세</li>
+						<li>학력 : 서일대학교 미디어출판학과 졸업</li>
+						<li>수료내역 : 2024.03~ 2024.10 SBS 아카데미 (대전) </li>
+						<li>수료내용 : 스마트 UX/UI 웹퍼블리셔 양성과정 수료</li>
+						<li>자격증 : 웹디자인 기능사, acp 포토샵 / 일러스트 </li>
+						<li class="ft-20 ft-bd pro-p">#코딩 #CSS #HTML #JAVASCRIPT #jQUERY </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 이미지 모핑 적용 섹션 메인 작업물 -->
+		<section class="section-1">
+			<div class="content-wrap">
+				<!-- workspace 폰트 -->
+				<section id="item-1" class="content">
+					<div class="content__img-wrap">
+						<div class="content__img content__img--1">
+							<div class="content__img-inner" style="background-image:url(img/webspace.jpg);"></div>
+							<div class="content__img-inner content__img-inner--hidden"
+								style="background-image:url(img/workspace.avif);"></div>
+						</div>
+					</div>
+					<p class="content__text content__text--center content__text--large"><span data-splitting>WORK SPACE</span></p>
+				</section>
+				<!-- vr 홈페이지 -->
+				<section id="item-3" class="content">
+					<div class="content__img-wrap">
+						<div class="content__img content__img--2">
+							<div class="content__img-inner" style="background-image:url(img/vrmain.png);"></div>
+							<div class="content__img-inner content__img-inner--hidden" style="background-image:url(img/vrback.png);">
+							</div>
+						</div>
+					</div>
+					<p class="content__text content__text--left">
+						<span>DREAMSCAPE</span><span>creative</span>
+						<span class="content__text-tiny">
+							드림스케이프는 직접 제작한 창작물로 현실과 가상공간을 <br> 넘나드는 VR 기기 제품을 소개하는 사이트를 만들어보고<br> 싶어 신비롭고 혁신적인 느낌으로 제작 했습니다.
+						</span>
+						<img src="img/vrmain.png" alt="vrmain">
+						<span class="view-skill-1 ft-16 ft-bd">
+							#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY <br>
+							메인페이지 1page
+						</span>
+						<span class="view-btn ft-20 ft-bd">
+							<a href="pofolsite/vr 포폴 창작 사이트/main.html">VIEW MORE</a>
+						</span>
+					</p>
+				</section>
+				<!-- 모네 아트갤 -->
+				<section id="item-4" class="content">
+					<div class="content__img-wrap">
+						<div class="content__img content__img--2">
+							<div class="content__img-inner" style="background-image:url(img/monemain.PNG);"></div>
+							<div class="content__img-inner content__img-inner--hidden"
+								style="background-image:url(img/artgallerysub.PNG);">
+							</div>
+						</div>
+					</div>
+					<p class="content__text content__text--left">
+						<span>MONE ART </span><span>Gallery</span>
+						<span class="content__text-tiny">
+							모네 아트 갤러리는 미술관 특유의 정교함과 깔끔함에 영감을 받아 <br> 
+							 배경은 단색으로 처리하고 콘텐츠와 인터페이스 요소는 <br> 최대한 간결하게 구성하여 사용자가 화면 속 작품에 <br> 온전히 몰입할 수 있도록 했습니다.
+						</span>
+						<img src="img/monemain.PNG" alt="monemain">
+						<span class="view-inter ft-16 ft-bd">
+							인터렉티브 반응형 웹
+						</span>
+						<span class="view-skill-2 ft-16 ft-bd">
+							#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY <br>
+							메인페이지 1page 서브페이지 3page
+						</span>
+						<span class="view-btn ft-20 ft-bd">
+							<a href="pofolsite/모네 아트갤러리/art gallery.html">VIEW MORE</a>
+						</span>
+					</p>
+				</section>
+			</div>
+		</section>
+
+
+		<!--990 모바일 vr 모네 아트 갤  -->
+		<div class="section-1-mob">
+			<div class="mob-work ft-40 ft-bd">MAIN WORK</div>
+			<div class="mob-con"  >
+				<div class="mob-vr" data-aos="fade-left">
+					<div class="mob-vr-1">
+						<img src="img/vrmain.png" alt="mobvr">
+					</div>
+					<div class="mob-vr-2">
+						<span class="ft-25 ft-bd mob-vr-m">DREAMSCAPE creative</span> <hr> <br>
+						<span class="ft-14 ">드림스케이프는 직접 제작한 창작물로 현실과 가상공간을 <br> 넘나드는 VR 기기 제품을 소개하는 사이트를 만들어보고<br> 싶어 신비롭고 혁신적인 느낌으로 제작 했습니다.</span> <br> <br>
+						<span class="ft-13">
+							#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY <br>
+							메인페이지 1page
+						</span>
+						<span class="view-btn ft-20 ft-bd">
+							<a href="pofolsite/vr 포폴 창작 사이트/main.html">VIEW MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="mob-mone" data-aos="fade-right">
+					<div class="mob-mone-1">
+						<img src="img/monemain.PNG" alt="monemain">
+					</div>
+					<div class="mob-mone-2">
+						<span class="ft-25 ft-bd mob-mone-m">MONE ART Gallery</span> <span class="mob-inter">인터렉티브 반응형</span> <hr> <br>
+						<span class="ft-14 ">모네 아트 갤러리는 미술관 특유의 정교함과 깔끔함에 영감을 받아 <br> 
+							배경은 단색으로 처리하고 콘텐츠와 인터페이스 요소는 <br> 최대한 간결하게 구성하여 사용자가 화면 속 작품에 <br> 온전히 몰입할 수 있도록 했습니다.</span> <br> <br>
+						<span class="ft-13">
+							#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY <br>
+							메인페이지 1page 서브페이지 3page
+						</span>
+						<span class="view-btn ft-20 ft-bd">
+							<a href="pofolsite/모네 아트갤러리/art gallery.html">VIEW MORE</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 스크롤 패러렐 이펙트 -->
+		<section class="parallel">
+			<div class="cover">
+				<p class="first-parallel ft-45"></p>
+			</div>
+			<div class="cover">
+				<p class="second-parallel ft-45"></p>
+			</div>
+			<div class="cover">
+				<p class="third-parallel ft-45"></p>
+			</div>
+		</section>
+
+		<!-- 서브 작업물 섹션2 러쉬 -->
+		<section class="section-2 common-section">
+			<div class="sub-con">
+				<div class="sub-txt">
+					<div class="top-t ft-50 ft-bd">
+						LUSH
+					</div>
+					<div class="mid-t ft-18">
+						<p>
+							Lush 사이트에서 영감을 받아, 자연친화적이면서도  <br> 원재료의 미를 강조하기 위해  생동감 넘치는 색상과 자연적 요소를 활용하여 <br> 브랜드의 친환경적 메시지를 명확히 전달하고 싶어 리디자인 하게 되었습니다.
+						</p>
+					</div>
+					<div class="hash ft-16 ft-bd">
+						<div class="hash-box">
+							<p>#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY </p>
+							<br> 메인페이지 1page
+						</div>
+						<div class="view-btn ft-20 ft-bd">
+							<a href="pofolsite/러쉬/lush.html">VIEW MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="sub-img"></div>
+			</div>
+		</section>
+		<!-- 섹션 3 현대제철 -->
+		<section class="section-3 common-section">
+			<div class="sub-con">
+				<div class="sub-txt">
+					<div class="top-t ft-50 ft-bd">
+						HYUNDAI STEEL
+					</div>
+					<div class="mid-t ft-18">
+						<p>현대제철의 혁신적이고 지속가능성이라는키워드와 <br>함께 깔끔하고 세련된 느낌의 아이디어로 <br>영감을 받아 홈페이지를 리디자인 하게 되었습니다.
+						</p>
+					</div>
+					<div class="bot-t ft-16 ft-bd">
+						<p>인터렉티브 반응형</p>
+					</div>
+					<div class="hash ft-16 ft-bd">
+						<div class="hash-box">
+							<p>#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY </p>
+							<br> 메인페이지 1page 서브페이지 1page
+						</div>
+						<div class="view-btn ft-20 ft-bd">
+							<a href="pofolsite/현대제철/index_main.html">VIEW MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="sub-img"></div>
+			</div>
+		</section>
+
+
+
+		<!-- 모바일 섹션 2,3 러쉬 현대제철 커스텀 -->
+				<!--990 모바일 vr 모네 아트 갤  -->
+				<div class="section-2-mob" >
+					<div class="mob-work-2 ft-40 ft-bd">SUB WORK</div>
+					<div class="mob-con">
+						<div class="mob-lush"  data-aos="fade-right">
+							<div class="mob-lush-1">
+								<img src="img/lushmain3.png" alt="moblush">
+							</div>
+							<div class="mob-lush-2">
+								<span class="ft-25 ft-bd mob-lush-m">LUSH</span> <hr> <br>
+								<span class="ft-14 ">Lush 사이트에서 영감을 받아, 자연친화적이면서도  <br> 원재료의 미를 강조하기 위해  생동감 넘치는 색상과 자연적 요소를 활용하여 <br> 브랜드의 친환경적 메시지를 명확히 전달하고 싶어 리디자인 하게 되었습니다. </span> <br> <br>
+								<span class="ft-13">
+									#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY <br>
+									메인페이지 1page
+								</span>
+								<span class="view-btn ft-20 ft-bd">
+									<a href="pofolsite/러쉬/lush.html">VIEW MORE</a>
+								</span>
+							</div>
+						</div>
+						<div class="mob-hyun"  data-aos="fade-left">
+							<div class="mob-hyun-1">
+								<img src="img/hyundaimain.png" alt="mobhyun">
+							</div>
+							<div class="mob-hyun-2">
+								<span class="ft-25 ft-bd mob-hyun-m">HYUNDAI STEEL</span> <span class="mob-inter">인터렉티브 반응형</span> <hr> <br>
+								<span class="ft-14 ">현대제철의 혁신적이고 지속가능성이라는키워드와 <br>함께 깔끔하고 세련된 느낌의 아이디어로 <br>영감을 받아 홈페이지를 리디자인 하게 되었습니다.</span> <br> <br>
+								<span class="ft-13">
+									#HTML #CSS #JAVASCRIPT <br> #FIGMA #JQUERY <br>
+									메인페이지 1page 서브페이지 1page
+								</span>
+								<span class="view-btn ft-20 ft-bd">
+									<a href="pofolsite/현대제철/index_main.html">VIEW MORE</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+		<!--섹션 4 푸터 부분 -->
+		<section class="section-4 footer">
+			<div class="sec-box">
+				<div class="thank ft-65 ft-bd">Thank You</div>
+				<div class="contact ft-50 ft-bd">
+					CONTACT
+				</div>
+				<div class="myname">
+					KIM HAK HYUN (김학현) <br>
+					kimhhyun0515@naver.com
+				</div>
+			</div>
+			<hr class="line">
+			<div class="last">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</div>
+			<div class="copy">© 2024 KIM, HAK-HYUN. All Rights Reserved.</div>
+		</section>
+
+
+		</div>
+		<div class="cursor"></div>
+		<button class="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+	</main>
+
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+	integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/splitting.min.js"></script>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
+	<script src="js/lenis.min.js"></script>
+	<script type="module" src="js/index.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

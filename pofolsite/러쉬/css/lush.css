@@ -1,0 +1,233 @@
+/*--------------nomalize start---------------------------------------------------------------------------*/
+body, ul, li {list-style: none; margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; /* 수평 스크롤 방지 */ }
+a {text-decoration: none; color: inherit;}
+/*--------------nomalize end---------------------------------------------------------------------------*/
+
+/*--------------font start---------------------------------------------------------------------------*/
+html > body,
+html > body input,
+html > body button,
+html > body textarea { font-family: 'pretendard', sans-serif; }
+/*--------------fotn end---------------------------------------------------------------------------*/
+
+.ft-12 {font-size: 12px;}
+.ft-13 {font-size: 13px;}
+.ft-14 {font-size: 14px;}
+.ft-16 {font-size: 16px;}
+.ft-18 { font-size: 18px; }
+.ft-20 { font-size: 20px; }
+.ft-25 { font-size: 25px }
+.ft-28 {font-size: 28px;}
+.ft-30 { font-size: 30px; }
+.ft-35 { font-size: 35px; }
+.ft-40 { font-size: 40px; }
+.ft-45 { font-size: 45px; }
+.ft-48 { font-size: 48px; }
+.ft-50 {font-size: 50px;}
+.ft-55 {font-size: 55px;}
+.ft-65 {font-size: 65px;}
+.ft-75 {font-size: 75px;}
+.ft-bd { font-weight: bold; }
+.ft-no {font-weight: normal;}
+
+
+/*--------------top-btn start---------------------------------------------------------------------------*/
+.top-btn { text-align: center;  position: fixed; top: 90%; right: 80px; background-color: #666565; color: #fff; border: none; width: 50px; height: 50px; font-size: 20px; cursor: pointer; z-index: 30; border-radius: 30px; line-height: 50px; transition: 0.6s; }
+
+/*--------------top-btn end---------------------------------------------------------------------------*/
+
+
+
+/* 최상단 헤더 커스텀 */
+.wrap {max-width: 1920px;}
+.header {color: #fff; position: relative; height: 920px; background-image: url(../img/lushmain.jpg); background-size: cover; background-position: center;}
+.header::after {content: ''; position: absolute;  top: 0; left: 0; right: 0; bottom: 0; z-index: 1;  background-color: rgba(0, 0, 0, 0.5); }
+.head-menu { width: 100%; height: 100px; position: fixed; z-index: 1000; display: flex; align-items: center; justify-content: space-between;}
+.logo {margin-left: 53px; width: 200px; height: 100px; text-align: center; line-height: 100px;}
+.sub-menu {margin-right: 100px; display: flex; width: 800px; height: 100px; line-height: 100px; text-align: center;}
+.sub-menu > li {width: 170px;}
+.sub-menu > li > a {transition: 0.8s; font-size: 16px; color: #fff;}
+.sub-menu > li > a:hover {color: aquamarine;}
+.head-menu::before {content: ''; position: absolute; top: 100px; left: 0; display: block; width: 100%; height: 1px; background: rgba(175, 175, 175, 0.8);}
+
+.head-txt {position: absolute;z-index: 2; bottom: 5%; left: 8%; }
+
+
+
+/* 섹션 커스텀 */
+.section {margin-top: 150px;  max-width: 1700px; margin-left: auto; margin-right: auto; height: 920px;}
+
+
+
+/* 섹션 1*/
+.section-1 { position: relative; }
+.panel-1 { align-items: center; display: flex; font-weight: bold; height: 200px; justify-content: center; text-transform: uppercase; }
+.service {   display: flex; justify-content: center;}
+.serv-con { margin-top: 50px; background-size: cover; background-repeat: no-repeat; background-position: center; position: absolute; width: 350px; height: 350px;  border-radius: 300%; }
+.serv-1 {left: 8%; z-index: 3; }
+.serv-1 > p {position: absolute; top: 105%; left: 38%; text-align: center;}
+.serv-1 > .ser-t1 {left: 20%; top: 115%;}
+.serv-2 {left: 24%; border: 1px solid rgb(201, 201, 201);}
+.serv-3 {z-index: 3;}
+.serv-3 > p {position: absolute; top: 105%; left: 42%; text-align: center;}
+.serv-3 > .ser-t2 {left: 19%; top: 115%;}
+.serv-4 {right: 24%; border: 1px solid rgb(201, 201, 201);}
+.serv-5 { right: 8%; z-index: 3;}
+.serv-5 > p {position: absolute; top: 105%; left: 42%; text-align: center;}
+.serv-5 > .ser-t3 {left: 18%; top: 115%;}
+
+
+.serv-1:hover::after,
+.serv-3:hover::after,
+.serv-5:hover::after {
+  cursor: pointer;
+  content: "View More"; /* Hover 시 표시할 텍스트 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+  width: 100%; height: 100%;
+  
+  border-radius: 300%;
+  text-align: center;
+  line-height: 18;
+  z-index: 10; /* 오버레이 텍스트가 다른 요소 위에 오도록 설정 */
+}
+
+
+
+
+
+/* 섹션 2*/
+.main-2t {text-align: center; margin-bottom: 100px;}
+.containers { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 2rem; }
+.card { position: relative; border-radius: 1.25rem; overflow: hidden; }
+.card-inner { background: var(--clr, #fff); border-radius: 1.25rem; }
+.box { width: 100%; height: 450px; position: relative; overflow: hidden; }
+.box-2 { width: 70%; margin-left: 82px; border-radius: 20px; }
+.imgBox { position: absolute; inset: 0; }
+.imgBox img { width: 100%; height: 100%; object-fit: cover; }
+.icon { position: absolute; bottom: -0.375rem; right: -0.375rem; width: 6rem; height: 6rem; background: var(--clr); border-top-left-radius: 50%; }
+.icon:hover .iconBox { transform: scale(1.1); rotate: -45deg; }
+.icon::before, .icon::after { position: absolute; content: ""; background: transparent; width: 1.25rem; height: 1.25rem; border-bottom-right-radius: 1.25rem; box-shadow: 0.313rem 0.313rem 0 0.313rem #fff; }
+.icon::before { bottom: 0.375rem; left: -1.25rem; }
+.icon::after { top: -1.25rem; right: 0.375rem; }
+.iconBox { position: absolute; inset: 0.625rem; background: #282828; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: 0.3s; }
+.iconBox span { color: #fff; font-size: 1.5rem; }
+.content { padding: 0.938rem 1.625rem;  }
+.content h3 { text-transform: capitalize; font-size: 25px; }
+.content p { margin: 0.625rem 0 1.25rem; color: #333; }
+.con-2 { margin-left: 70px; }
+ul { margin: 0; padding: 0; list-style-type: none; display: flex; align-items: center; flex-wrap: wrap; gap: 0.625rem; }
+ul li { text-transform: uppercase; background: var(--clr-tag); color: #282828; font-weight: 700; font-size: 0.8rem;  border-radius: 0.188rem; }
+
+
+/* 섹션 3 */
+
+.section-3 { margin-top: 150px;  height: 920px; }
+.main-1t {text-align: left; padding-left: 50px; margin-bottom: 100px;}
+.groups {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item-c {position: relative; width: 15vw;
+  height: 600px;
+  background-position: center;
+  background-size: 60vh;
+  margin: 1vw;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pro-t {position: absolute; font-size: 30px; color: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+
+
+
+
+/* 섹션 4 제품 및 기부 */
+
+.section-4 > .img_con {display: flex; overflow: hidden; height: 920px; max-width: 1700px; }
+.dis-box { flex-grow: 1; flex-basis: 0; height: 100%;  transition: flex .7s ease, transform 0.3s ease; position: relative;}
+.back-dis {width: 100%; background-color: #000000; position: absolute; height: 100%; top: 0; left: 0; opacity: 0.5;  transition: opacity 0.7s ease;}  
+.box1 { background-image: url('../img/store2.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.box2 { background-image: url('../img/donation.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.dis-txt { text-align: start; line-height: 48;  font-size: 30px; font-weight: bold; padding-left: 130px; color: #fff; display: none;}
+.ds-t {padding-left: 90px;}
+.dis-txt-2 {text-align: start; line-height: 40;  font-size: 20px; font-weight: bold; padding-left: 120px; padding-top: 60px; color: #fff; display: none; position: absolute; top: 34%; left: 1%;}
+.ds-t1 {padding-left: 80px;}
+.dis-box:hover > .dis-txt {display: block;}
+.dis-box:hover > .dis-txt-2 {display: block;}
+.dis-box:hover > .back-dis { opacity: 0;}
+.dis-box:hover { flex: 2; transform: scale(1.1);z-index: 1;}
+.dis-box:hover ~ .dis-box { flex: 0.7;} /* 호버되지 않은 박스 */
+
+
+
+
+/* 섹션 5 및 푸터 커스텀 */
+
+.section-5 {height: 620px;}
+.drop-img { text-align: center; width: 100%; height: 100%; }
+.drop-img > ul { display: flex; height: 100%; }
+.drop-img > ul > li { width: 16.17%; height: 620px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; }
+.drop-img > ul > li > p { cursor: pointer; width: 170px; height: 170px; border-radius: 300px; line-height: 170px; position: relative; z-index: 1; }
+.drop-img > ul > li { background-color: transparent; }
+.drop-img > ul > li::before { content: ''; position: absolute; top: -100%; left: 0; width: 100%; height: 100%; transition: top 0.5s; z-index: 1; }
+
+
+/* 각 li에 맞는 배경 이미지 설정 (동일한 이미지 사용 시 반복) */
+.drop-img > ul > li:nth-child(1)::before {background-image: url('../img/dropimg-1.jpg'); background-position: center; background-size: cover; background-repeat:  no-repeat; }
+.drop-img > ul > li:nth-child(2)::before { background-image: url('../img/dropimg-2.jpg'); background-position: center; background-size: cover; background-repeat:  no-repeat; }
+.drop-img > ul > li:nth-child(3)::before {background-image: url('../img/dropimg-3.jpg');  background-position: center; background-size: cover; background-repeat:  no-repeat; }
+.drop-img > ul > li:nth-child(4)::before { background-image: url('../img/drop-img-4.jpg');  background-position: center; background-size: cover; background-repeat:  no-repeat; }
+.drop-img > ul > li:nth-child(5)::before { background-image: url('../img/dropimg-5.jpg');  background-position: center; background-size: cover; background-repeat:  no-repeat; }
+.drop-img > ul > li:nth-child(6)::before { background-image: url('https://plus.unsplash.com/premium_photo-1673728254015-9a437bdb44aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8JUVCJUIzJUI0JUVCJTlEJUJDJUVDJTgzJTg5fGVufDB8fDB8fHww'); background-position: center; background-size: cover; background-repeat:  no-repeat; }
+
+/* p 요소를 호버할 때 배경 이미지가 내려오도록 설정 */
+.drop-img > ul > li > p:hover {
+  cursor: pointer; /* 포인터로 변경 */
+}
+
+.drop-img > ul > li:hover::before {
+  top: 0; /* 호버 시 이미지가 내려오게 설정 */
+}
+.drop-img > ul > li.active::before { top: 0; }
+.color1 { background-color: red; }
+.color2 { background-color: orange; }
+.color3 { background-color: yellow; }
+.color4 { background-color: green; }
+.color5 { background-color: blue; }
+.color6 { background-color: purple; }
+
+/* 호버 시 글자색 유지하고 배경색 없애기 */
+
+/* p를 호버했을 때 li의 배경색 설정 */
+.drop-img > ul > li:hover > p {background-color: transparent;  color: #ffffff; }
+.drop-img > ul > li.active > p { color: #ffffff; } /* active 상태에서 글자색 변경 */
+
+/* 푸터 커스텀 */
+.footer { background-color: black; width: 100%;  margin-left: auto; margin-right: auto; color: #fff; display: flex;}
+.foot-lt {padding: 50px 0; margin-left: 100px;}
+.ft-g {color: #707070;}
+.foot-ct {padding: 140px 440px; position: relative; display: flex;}
+.foot-ct-t {position: absolute; display: flex; top: 60%; left: 32%; gap: 20px; text-align: center;}
+.foot-ct-t > p {transition: 0.5s; width: 180px; height: 50px; line-height: 50px; border: 1px solid #fff; cursor: pointer;}
+.foot-ct-t> p:hover {background-color: #fff; color: #000000;}
+.foot-rt-t {display: flex; width: 100%; height: 50px; gap: 20px; cursor: pointer; padding-top: 100px;}
+.foot-rt-t > p {transition: 0.8s;}
+.foot-rt-t > p:hover {color: #63ca33;}
+.foot-ic { padding: 20px; margin-top: 20px;}
+.foot-ic > .foot-ic-1 > li {cursor: pointer; text-align: center; line-height: 3.3; margin-left: 5px; width: 14.5%; border: 1px solid #fff; height: 35px; border-radius: 60px;}
+.foot-ic > .foot-ic-1 > li > i {font-size: 20px; color: #fff; }

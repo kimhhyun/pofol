@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대제철 제품기술</title>
+    <link rel="stylesheet" href="style_product.css">
+    <!--자바 -->
+    <script src="java/jquery-1.12.3.js"></script>
+    <script src="java/script.js"></script>
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--  aos 라이브러리  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--폰트링크 시작-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!--폰트링크 끝-->
+    <!-- 스무스 스크롤바 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <!-- 로데쉬 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="script/script_product.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header><!--헤더-->
+            <div class="logo">
+                <a href="index_main.html">
+                    <img src="imges/logo.png" alt="">
+                </a>
+            </div>
+            <div class="m_menu">
+                <span class="m_menu_btn">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <nav class="m_menu_box">
+                        <ul class="m_main_menu">
+                            <li>
+                                <a href="#">회사소개<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">기업소개</a></li>
+                                    <li><a href="#">CEO 메세지</a></li>
+                                    <li><a href="#">경영이념</a></li>
+                                    <li><a href="#">역사관</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                </ul>
+                            </li>
+                            <hr class="opacity-20">
+                            <li>
+                                <a href="">제품기술<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">제품소개</a></li>
+                                    <li><a href="#">R&D</a></li>
+                                    <li><a href="#">생산공정</a></li>
+                                    <li><a href="#">제품카탈로그</a></li>
+                                </ul>
+                            </li>
+                            <hr class="opacity-20">
+                            <li>
+                                <a href="#">S.H.E<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">안전</a></li>
+                                    <li><a href="#">CEO 보건</a></li>
+                                    <li><a href="#">환경</a></li>
+                                </ul>
+                            </li>
+                            <hr class="opacity-20">
+                            <li>
+                                <a href="#">투자정보<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">주식정보</a></li>
+                                    <li><a href="#">전자공고</a></li>
+                                    <li><a href="#">경영정보</a></li>
+                                    <li><a href="#">재무정보</a></li>
+                                    <li><a href="#">IR 자료실</a></li>
+                                </ul>
+                            </li>
+                            <hr class="opacity-20">
+                            <li>
+                                <a href="#">홍보센터<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">뉴스센터</a></li>
+                                    <li><a href="#">홍보자료</a></li>
+                                    <li><a href="#">스포츠단</a></li>
+                                    <li><a href="#">견학신청</a></li>
+                                </ul>
+                            </li>
+                            <hr class="opacity-20">
+                            <li>
+                                <a href="#">지속가능<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">지속가능경영</a></li>
+                                    <li><a href="#">사회공헌</a></li>
+                                    <li><a href="#">신뢰경영</a></li>
+                                </ul>
+                            </li>
+                            <hr class="opacity-20">
+                            <li>
+                                <a href="#">동반성장<span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">동반성장정책</a></li>
+                                    <li><a href="#">지원프로그램</a></li>
+                                    <li><a href="#">소통 & 채널</a></li>
+                                    <li><a href="#">구매포털</a></li>
+                                </ul>
+                            </li>
+                            <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+                        </ul>
+                    </nav>
+                </span>
+            </div>
+
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">기업소개</a></li>
+                            <li><a href="#">CEO 메세지</a></li>
+                            <li><a href="#">경영이념</a></li>
+                            <li><a href="#">역사관</a></li>
+                            <li><a href="#">인재채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index_product.html">제품기술</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">제품소개</a></li>
+                            <li><a href="#">R&D</a></li>
+                            <li><a href="#">생산공정</a></li>
+                            <li><a href="#">제품카탈로그</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">S.H.E</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">안전</a></li>
+                            <li><a href="#">보건</a></li>
+                            <li><a href="#">환경</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">투자정보</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">주식정보</a></li>
+                            <li><a href="#">전자공고</a></li>
+                            <li><a href="#">경영정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">IR 자료실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">뉴스센터</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">스포츠단</a></li>
+                            <li><a href="#">견학신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">지속가능</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">지속가능경영</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">신뢰경영</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">동반성장</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">동반성장정책</a></li>
+                            <li><a href="#">지원프로그램</a></li>
+                            <li><a href="#">소통 & 채널</a></li>
+                            <li><a href="#">구매포털</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sub_box">
+                    <div class="con">
+                        <div class="txt_box">
+                            <a href="#">현대 홈페이지 바로가기 <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <hr class="opacity-40">
+                    </div>
+                    <hr>
+                </div>
+            </nav>
+
+            <div class="util">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="contents">
+
+            <section class="section banner">
+                <a href="#">
+                    <h1 class="ft-bd" >제품기술</h1>
+                    <img src="imges/productpage/banner.jpg" alt="제품기술">
+                </a>
+            </section>
+
+            <section class="section product">
+              <div class="inner">
+                  <div class="img_con" >
+                      <div class="img_con_top">
+                          <div class="img_box img_box_1" data-aos="fade-right" >
+                              <img src="imges/productpage/product/product_1.jpg" alt="프로덕트 이미지2">
+                          </div>
+                          <div class="img_box img_box_2" data-aos="fade-right" >
+                              <img src="imges/productpage/product/product_2.jpg " alt="프로덕트 이미지1">
+                          </div>
+                      </div>
+                      <div class="img_con_bot">
+                          <div class="img_box img_box_3" data-aos="fade-right" >
+                              <img src="imges/productpage/product/product_3.jpg" alt="프로덕트 이미지3">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="txt_con" data-aos="fade-left">
+                      <div class="product_small top-t ft-bd ft-35">Product</div>
+                      <div class="product_big mid-t ft-bd ft-65">제품소개</div>
+                      <div class="product_text end-t ft-20">최신 설비를 통한 고품질 제품만을 생산합니다.</div>
+                      <div class="h-core_box">
+                          <p>현대제철의 프리미엄 건설용 강재</p>
+                          <div class="a_box">
+                              <a href="#">
+                                  H-CORE 바로가기<i class="fa-solid fa-chevron-right"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+            <section class="section slide" data-aos="fade-zoom-in">
+                <div class="inner">
+                    <div class="swiper mySwiper slide_con">
+                        <div class="swiper-wrapper slide_list">
+                            <div class="swiper-slide">
+                                <img src="imges/productpage/slide/reinforcingbar.jpg" alt="철근">
+                                <div class="txt_box">
+                                  <div class="inner_txt_box">
+                                    <h3>건축물 안전을 책임지는</h3>
+                                    <h2>철근</h2>
+                                    <p class="info">철근은 표면에 축 방향의 돌기와 횡 방향으로 일정한 간격의 마디가 있어
+                                        콘크리트 부착력이 강하게 만들어진 제품입니다.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="imges/productpage/slide/steelpipe.jpg" alt="강관">
+                                <div class="txt_box">
+                                  <div class="inner_txt_box">
+                                    <h3>다양한 산업 현장에서 활용되는</h3>
+                                    <h2>강관</h2>
+                                    <p class="info">축적된 기술력으로 만들어진 현대제철의 강관제품은 건축구조 및
+                                      기초재에서부터 사회간접자본시설까지 널리 사용되며 국가산업화를 이끌어 왔습니다.</p>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="imges/productpage/slide/plate.jpg" alt="후판">
+                                <div class="txt_box">
+                                  <div class="inner_txt_box">
+                                    <h3>고품질 수요 대응력을 보유한</h3>
+                                    <h2>후판</h2>
+                                    <p class="info">현대제철 당진제철소에서는 연간 350만 톤의 후판을 생산할 수 있으며
+                                      열처리 QT 설비 등 최신 설비를 갖추고 있습니다. </p>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="imges/productpage/slide/hotroll.jpg" alt="열연">
+                                <div class="txt_box">
+                                  <div class="inner_txt_box">
+                                    <h3>최신 설비를 통한 고품질의</h3>
+                                    <h2>열연</h2>
+                                    <p class="info">열연은 반제품인 슬래브를 가열해 압연 후 코일 형태로 감은 열연강판을 말합니다.
+                                      열연은 자동차용, 구조용, 강관용 등 산업전반의 다양한 분야에 널리 사용되고 있습니다.
+                                    </p>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="imges/productpage/slide/coldroll.jpg" alt="냉연">
+                                <div class="txt_box">
+                                  <div class="inner_txt_box">
+                                    <h3>자동차나 건축 재료로 사용되는</h3>
+                                    <h2>냉연</h2>
+                                    <p class="info">냉연은 열연을 상온에서 압연한 강판으로 철강제품 중에서 가장 생산하기가 어렵고, 높은 기술력을 필요로 하기 때문에
+                                        '철강제품의 꽃'이라고도 불립니다.</p>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section develop">
+              <div class="inner">
+              <div class="top-t ft-bd ft-35" data-aos="fade-right">R&D</div>
+              <div class="mid-t ft-65 ft-bd" data-aos="fade-right">연구개발</div>
+              <div class="end-t ft-20" data-aos="fade-right">
+                  현대제철 기술연구소는 Application Engineering Center 로서 <br> 고객의 가치 향상을 위한 기술개발을 진행하고 있습니다. 
+              </div>
+              <div class="swiper-container img-b" data-aos="fade-zoom-in" data-aos-duration="2000">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="img-box box-view">
+                         <div class="img-t ft-25 ft-bd">
+                          VIEW MORE
+                         </div>
+                         <div class="img-ar">
+                          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <img
+                          src="imges/productpage/rnd/carmake.jpg"
+                          alt="Image 1"
+                        />
+                        <div class="img-bg">
+                          기술연구
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <img
+                          src="imges/productpage/rnd/tech.jpg"
+                          alt="Image 2"
+                        />
+                        <div class="img-bg">
+                          제품개발
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <img
+                          src="imges/productpage/rnd/research.jpg"
+                          alt="Image 3"
+                        />
+                        <div class="img-bg">
+                          기초연구
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <img
+                          src="imges/productpage/rnd/ship.jpg"
+                          alt="Image 4"
+                        />
+                        <div class="img-bg">
+                          선행기술
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <img
+                          src="imges/productpage/rnd/machine.jpg"
+                          alt="Image 5"
+                        />
+                        <div class="img-bg">
+                          응용기술
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add pagination and navigation if needed -->
+                </div>
+          
+          </div>
+          </section>
+  
+          <section class="section center">
+            <div class="inner">
+              <div class="fade-box"  data-aos="fade-left">
+              <div class="top-t ft-bd ft-35">CENTER</div>
+              <div class="mid-t ft-65 ft-bd">기술연구소</div>
+              <div class="end-t ft-20">
+                현대제철 기술연구소는 Application Engineering Center로서 <br>
+                고객의 가치 향상을 위한 기술개발을 진행하고 있습니다.
+              </div>
+            </div>
+              <div class="cen-map" data-aos="fade-zoom-in" data-aos-duration="2000">
+                <div class="map-container">
+                  <div class="map-bg">
+                  <img src="imges/productpage/center/map.jpg" alt="지도1">
+                </div>
+                  <!-- 메뉴 버튼들 -->
+                  <div class="map-menu">
+                    <button class="btn-1" data-gallery="1">1</button>
+                    <button class="btn-2" data-gallery="2">2</button>
+                    <button class="btn-3" data-gallery="3">3</button>
+                    <button class="btn-4" data-gallery="4">4</button>
+                  </div>
+                </div>
+                <!-- <div class="arrow"></div> -->
+                <!-- 갤러리 설명 -->
+                <div class="gallery-description">
+                  <div id="gallery-1" class="gallery-item">
+                    <div class="gallery-image">
+                      <img src="imges/productpage/center/gal-main.jpg" alt="연구소 이미지">
+                    </div>
+                    <div class="gallery-content">
+                      <h2>연구소</h2>
+                      <p>연구소에서는 첨단 실험 장비를 활용해 다양한 실험을 진행하며, 고객의 요구에 맞는 기술을 개발하고 있습니다.</p>
+                    </div>
+                    <div class="gallery-equipment">
+                      <h3>주요 설비</h3>
+                      <ul>
+                        <li> 
+                          <img src="imges/productpage/center/microscope.png" alt="현미경">
+                          전자현미경
+                        </li>
+                        <li>
+                          <img src="imges/productpage/center/strength-tester.png" alt="시험기">
+                          고온 시험기
+                        </li>
+                        <li>
+                          <img src="imges/productpage/center/data.png" alt="분석장비">
+                          분석 장비
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="gallery-2" class="gallery-item">
+                    <div class="gallery-image">
+                      <img src="imges/productpage/center/gal-2.jpg" alt="통합개발센터 이미지">
+                    </div>
+                    <div class="gallery-content">
+                      <h2>통합개발센터</h2>
+                      <p>통합개발센터는 신제품 개발과 응용기술연구를 중점으로 연구하고 있으며, 이를 통해 고객 맞춤형 기술을 개발합니다.</p>
+                    </div>
+                    <div class="gallery-equipment">
+                      <h3>주요 설비</h3>
+                      <ul>
+                        <li>
+                         <img src="imges/productpage/center/research.png" alt="신제품개발">
+                          신제품 개발 설비
+                        </li>
+                        <li>
+                          <img src="imges/productpage/center/technology.png" alt="응용기술">
+                          응용기술 연구 장비
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="gallery-3" class="gallery-item">
+                    <div class="gallery-image">
+                      <img src="imges/productpage/center/gal-3.jpg" alt="제선시험동 이미지">
+                    </div>
+                    <div class="gallery-content">
+                      <h2>제선시험동</h2>
+                      <p>제선시험동에서는 지능형 공정기술 연구를 위한 설비를 활용하여 혁신적인 연구 개발이 진행됩니다.</p>
+                    </div>
+                    <div class="gallery-equipment">
+                      <h3>주요 설비</h3>
+                      <ul>
+                        <li>
+                          <img src="imges/productpage/center/artificial-intelligence.png" alt="인공지능">
+                          지능형 공정기술 설비
+                        </li>
+                        <li>
+                          <img src="imges/productpage/center/control.png" alt="스마트제어">
+                          스마트 제어 시스템
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="gallery-4" class="gallery-item">
+                    <div class="gallery-image">
+                      <img src="imges/productpage/center/gal-4.jpg" alt="특수강 시험동 이미지">
+                    </div>
+                    <div class="gallery-content">
+                      <h2>특수강 시험동</h2>
+                      <p>특수강 시험동에서는 다양한 피로 평가 및 분석을 통해 부품의 내구성을 극대화하고, 필요한 경우 가공 작업을 수행하여 성능을 최적화합니다.</p>
+                    </div>
+                    <div class="gallery-equipment">
+                      <h3>주요 설비</h3>
+                      <ul>
+                        <li>
+                          <img src="imges/productpage/center/analysis.png" alt="피로평가">
+                          피로 평가 장비
+                        </li>
+                        <li>
+                          <img src="imges/productpage/center/product-durability.png" alt="내구성">
+                          내구성 분석 기기
+                        </li>
+                        <li>
+                          <img src="imges/productpage/center/laser.png" alt="정밀가공">
+                          정밀 가공 기계
+                        </li>       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="section catalog">
+            <div class="inner">
+                <div class="top-t ft-bd ft-35" data-aos="fade-zoom-in">CATALOG</div>
+                <div class="cata">
+                    <div class="catmenu">
+                        <div class="catmenu-box">
+                            <ul class="ft-bd" data-aos="fade-up">
+                                <li>
+                                    <img src="imges/productpage/catalog/factory.png" class="hover-filter" alt="종합">
+                                    <p>종합 카탈로그</p>
+                                </li>
+                                <li>
+                                    <img src="imges/productpage/catalog/industrial-robot (1).png" class="hover-filter" alt="웨어엑스">
+                                    <p>WEAREX</p>
+                                </li>
+                                <li>
+                                    <img src="imges/productpage/catalog/car-manufacturing.png" class="hover-filter" alt="자동차공정">
+                                    <div class="auto">AP <p>(Automotive Part)</p></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catmenu-box">
+                            <ul class="ft-bd" data-aos="fade-up">
+                                <li>
+                                    <img src="imges/productpage/catalog/metal-sheets (3).png" class="hover-filter" alt="냉연강판">
+                                    <p>냉연강판</p>
+                                </li>
+                                <li>
+                                    <img src="imges/productpage/catalog/iron (1).png" class="hover-filter" alt="철근">
+                                    <p>철근통합</p>
+                                </li>
+                                <li>
+                                    <img src="imges/productpage/catalog/manufacture.png" class="hover-filter" alt="기타제품">
+                                    <p>기타제품</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+      <!--푸터-->
+      <footer>
+        <div class="footer">
+          <div class="foot-t ft-14 ft-bd">
+            <div class="foot-txt"><a href="#">개인정보 취급방침</a></div>
+            <div class="foot-txt"><a href="#">개인정보 처리방침</a></div>
+            <div class="foot-txt"><a href="#">영상정보처리기기 운영관리 방침</a></div>
+            <div class="foot-txt"><a href="#">사이버 감사실</a></div>
+            <div class="foot-txt"><a href="#">SITE MAP</a></div>
+          </div>
+          <div class="foot-m ft-13 ft-no">
+            <div class="foot-txt2 ">
+              <a href="#">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교(GREITS PANGYO) 9층 | 대표전화 : 031-510-2114 / FAX :
+                031-510-2150</a>
+            </div>
+          </div>
+          <div class="foot-b ft-12 ft-no">
+            <div class="foot-txt3">
+              <div class="fam">FAMILY SITE <i class="fa-solid fa-caret-up up"></i></div>
+              <ul class="family">
+                <li><a href="#">방문예약 시스템</a></li>
+                <li><a href="#">고객포털 시스템</a></li>
+                <li><a href="#">파트너 시스템</a></li>
+                <li><a href="#">통합 구매자재 시스템</a></li>
+                <li><a href="#">해송관리 시스템</a></li>
+                <li><a href="#">HCORE STORE</a></li>
+              </ul>
+            </div>
+            <div class="foot-txt3">
+              <div class="fam">E-BUSINESS <i class="fa-solid fa-caret-up up"></i></div>
+              <ul class="family">
+                <li><a href="#">방문예약 시스템</a></li>
+                <li><a href="#">고객포털 시스템</a></li>
+                <li><a href="#">파트너 시스템</a></li>
+                <li><a href="#">통합 구매자재 시스템</a></li>
+                <li><a href="#">해송관리 시스템</a></li>
+                <li><a href="#">HCORE STORE</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copy ft-12 ft-no">
+            <a href="#">Copyright(C) HYUNDAI STEEL. All rights reserved.</a>
+          </div>
+          <div class="ins ft-25">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="you ft-25">
+            <a href="https://www.youtube.com/@hyundaisteelofficial"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+</body>
+
+</html>

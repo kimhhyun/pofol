@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- 스와이퍼 -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- 스무스 스크롤바 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+    <!--  aos 라이브러리  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--  구글 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DreamScape</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="overlay" id="overlay"></div>
+      <section class="page-1">
+        <div class="top-bar-section">
+          <div class="logo">Dream <span class="gray">Scape</span></div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">모델</a></li>
+              <li><a href="#">체험</a></li>
+              <li><a href="#">멤버십</a></li>
+            </ul>
+          </div>
+          <div class="my">
+            <div class="my-list">
+              <ul>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li>
+                  <a href="#" id="search-toggle"><i class="fa-solid fa-magnifying-glass font-1"></i></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-bars font-1" id="toggle-menu"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="overlay"></div>
+          <div class="menu-1" id="menu">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <div class="que-logo">Dream<span class="gray">Scape</span></div>
+            <ul>
+              <li>
+                <a href="#">VR 콘텐츠</a>
+                <ul>
+                  <li><a href="#"> 게임</a></li>
+                  <li><a href="#"> 교육</a></li>
+                  <li><a href="#"> 시뮬레이션</a></li>
+                  <li><a href="#"> 관광</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">구매</a>
+                <ul>
+                  <li><a href="#"> 게임</a></li>
+                  <li><a href="#"> 교육</a></li>
+                  <li><a href="#"> 시뮬레이션</a></li>
+                  <li><a href="#"> 관광</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">체험</a>
+                <ul>
+                  <li><a href="#">게임</a></li>
+                  <li><a href="#"> 교육</a></li>
+                  <li><a href="#"> 시뮬레이션</a></li>
+                  <li><a href="#"> 관광</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">멤버스</a>
+                <ul>
+                  <li><a href="#"> 게임</a></li>
+                  <li><a href="#"> 교육</a></li>
+                  <li><a href="#"> 시뮬레이션</a></li>
+                  <li><a href="#"> 관광</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-box">
+          <input type="text" class="search-bar" placeholder="검색어를 입력하세요" >
+        </div>
+      </section>
+      
+      <section class="page-2">
+        <div class="text-box">
+          현실을 넘어선 환상 <br />
+          DreamScape
+        </div>
+        <div class="swiper-container img-b">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img
+                  src="https://i.pinimg.com/564x/77/78/63/777863172be0a4ce0f5bf728c487d41b.jpg"
+                  alt="Image 1"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img
+                  src="https://i.pinimg.com/564x/91/1e/2f/911e2fbb96916c423c16e507309184c2.jpg"
+                  alt="Image 2"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img
+                  src="https://i.pinimg.com/564x/74/79/45/7479459f80dea6c480f18340864dfd28.jpg"
+                  alt="Image 1"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img
+                  src="https://i.pinimg.com/564x/33/f9/9d/33f99d130eefbc882c3451dcb298bd0c.jpg"
+                  alt="Image 4"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Add pagination and navigation if needed -->
+        </div>
+       
+      </section>
+      <section class="page-3">
+        <div class="ani-box">
+          <div class="ani">
+            <img
+              data-aos="zoom-out-up"
+              src="https://i.pinimg.com/originals/09/16/f5/0916f586c859a92846e8e996b1bd64f1.gif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="info">
+            <div class="top-i">
+              <span>Brand <br />Identity</span>
+            </div>
+            <div class="bot-i">
+              드림(Dream)과 스케이프(Scape)의 합성어로. 드림은 꿈을 의미하고
+              스케이프는 풍경이나 경치를 뜻하는데, 가상현실 제품을 통해서
+              현실에서는 체험하기 힘든, 마치 꿈같은 풍경과 경치를 체험하고 느낄
+              수 있다는 점에서 연결시킴.
+            </div>
+          </div>
+          <div class="info">
+            <div class="top-i">
+              <span>Interactive <br />Animation</span>
+            </div>
+            <div class="bot-i">
+              드림(Dream)과 스케이프(Scape)의 합성어로. 드림은 꿈을 의미하고
+              스케이프는 풍경이나 경치를 뜻하는데, 가상현실 제품을 통해서
+              현실에서는 체험하기 힘든, 마치 꿈같은 풍경과 경치를 체험하고 느낄
+              수 있다는 점에서 연결시킴.
+            </div>
+          </div>
+          <div class="info">
+            <div class="top-i">
+              <span
+                >VR <br />
+                Life style</span
+              >
+            </div>
+            <div class="bot-i">
+              드림(Dream)과 스케이프(Scape)의 합성어로. 드림은 꿈을 의미하고
+              스케이프는 풍경이나 경치를 뜻하는데, 가상현실 제품을 통해서
+              현실에서는 체험하기 힘든, 마치 꿈같은 풍경과 경치를 체험하고 느낄
+              수 있다는 점에서 연결시킴.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-4">
+        <div class="ani-2" id="ani-2">
+          <video
+            id="scroll-video"
+            data-aos="zoom-in"
+            src="https://cdn.pixabay.com/video/2021/04/27/72357-542991492_tiny.mp4"
+            muted
+            autoplay
+            loop
+          ></video>
+        </div>
+      </section>
+      <section class="page-5">
+        <div class="top-info">
+          <div class="lt-text" data-aos="flip-left">
+            VR-GOGLE / VR-CHAIR / VR-CONTROLLER / SMART-GLASS
+          </div>
+          <div class="rt-text" data-aos="fade-left">
+            다양한 시각과 전략으로 무장한 스케이퍼들이 <br />
+            당신의 브랜드를 성장시키는 <br />
+            무한한 VR 경험을 제공합니다
+          </div>
+        </div>
+        <div class="menu-info">
+          <div class="item-box">
+            <div class="item i1 rot" data-aos="fade-right">
+              <a href="#"><span>VR-GOGLE</span></a>
+            </div>
+            <div class="item i2 rot" data-aos="fade-right">
+              <a href="#"><span>VR-CHAIR</span></a>
+            </div>
+            <div class="item i3 rot" data-aos="fade-right">
+              <a href="#"><span>SMART-GLASS</span></a>
+            </div>
+            <div class="item i4 rot" data-aos="fade-right">
+              <a href="#"><span>VR-CONTROLLER</span></a>
+            </div>
+          </div>
+          <div class="item-img" data-aos="flip-left"></div>
+        </div>
+      </section>
+      <section class="page-6">
+        <div class="gogle-box">
+          <div id="image-container">
+            <div id="image"></div>
+            <button id="reset-button">Reset</button>
+          </div>
+        </div>
+        <div class="gogle-text">
+          <div class="top-t">
+            VR <br />
+            GOGLE
+          </div>
+          <div class="mid-t">
+            <div class="vr-ani">
+              <video
+                src="https://cdn.pixabay.com/video/2018/03/30/15263-262576435_large.mp4"
+                muted
+                autoplay
+                loop
+              ></video>
+            </div>
+          </div>
+          <div class="bot-t">
+            당신의 현실을 넘어설 준비가 되셨나요? 새로운 세계로의 문을 열어줄 VR
+            고글이 여기 있습니다! 최첨단 기술로 제작된 이 고글은 현실과 가상
+            사이를 완벽하게 연결하여 새로운 경험을 선사합니다. 게임에서의 몰입,
+            교육에서의 혁신, 심지어 실제로 불가능한 시뮬레이션까지 가능합니다.
+            당신의 모험은 이제 시작됩니다. VR 고글을 통해 미래를 경험하세요!
+          </div>
+        </div>
+      </section>
+      <section class="page-7">
+        <div class="page-bg"></div>
+        <div class="chair-info">
+          <div class="lt-chair">
+            <div class="txt-box">
+              <h1>
+                VR
+                <br />
+                CHAIR
+              </h1>
+
+              <div class="md-txt">
+                VR 체어로 새로운 세상을 경험하세요!
+                <br />
+                현대 사회에서 디지털 기술은 우리의 삶에 혁신을 가져왔습니다.
+                <br />
+                이제 그 혁신의 새로운 지평, 바로 VR 체어입니다.
+              </div>
+
+              <div class="btn-box">
+                <a href="#"><span>제품보기</span></a>
+                <a href="#"><span>자세히보기</span></a>
+                <a href="#"><span>문의하기</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="rt-chair">
+            <div class="chair-img">
+              <img
+                src="https://cdn.funshop.co.kr/products/0000169402/637819159854279412.gif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-8">
+        <div class="control-box">
+          <div id="image-container-2">
+            <div id="image-2"></div>
+            <button id="reset-button-2">Reset</button>
+          </div>
+        </div>
+        <div class="control-text">
+          <div class="top-t">
+            SMART <br />
+            GLASS
+          </div>
+          <div class="mid-t">
+            <div class="vr-ani">
+              <video
+                src="https://v1.pinimg.com/videos/mc/720p/7f/18/91/7f18914e68aef5d5dd4df936c3c4a22f.mp4"
+                muted
+                autoplay
+                loop
+              ></video>
+            </div>
+          </div>
+          <div class="bot-t">
+            여러분의 일상을 더욱 효율적이고 편리하게 만들어줄 수 있는 스마트
+            안경을 추천드립니다! 이 안경은 단순한 기기가 아니라, 현실과 디지털
+            세상을 융합시켜 새로운 차원의 경험을 제공합니다. 매일 필요한 정보를
+            실시간으로 확인하고, 핸즈프리로 편리하게 사용할 수 있는 기능들이
+            여러분의 일상을 완전히 변화시킬 것입니다. 또한, 스마트 안경은 탁월한
+            디자인과 세련된 스타일로 여러분의 이미지도 한층 더 업그레이드시켜 줄
+            것입니다. 
+          </div>
+        </div>
+      </section>
+      <section class="page-9">
+        <div class="page-bg-2"></div>
+        <div class="glass-info">
+          <div class="lt-cont">
+            <div class="cont-vid">
+              <video
+                src="https://v1.pinimg.com/videos/mc/720p/4a/af/40/4aaf40c1a0839862deabdda85193a77b.mp4"
+                muted
+                autoplay
+                loop
+              ></video>
+            </div>
+          </div>
+          <div class="rt-cont">
+            <div class="txt-box">
+              <h1>
+                VR
+                <br />
+                CONTROLLER
+              </h1>
+
+              <div class="md-txt">
+                현실을 넘어선 새로운 차원의 게임과 상호작용을 경험하세요!
+                <br />
+                최첨단 기술로 제작된 VR 컨트롤러가 당신의 손 끝에서 실감나는
+                조작을 가능하게 합니다. <br />이제 당신의 움직임이 게임 세계를
+                움직이게 하세요.
+              </div>
+
+              <div class="btn-box">
+                <a href="#"><span>제품보기</span></a>
+                <a href="#"><span>자세히보기</span></a>
+                <a href="#"><span>문의하기</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-10">
+        <div class="custom-lt-dev custom-swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://www.9dxr.com/wp-content/uploads/2023/05/vr-simulator.jpg"
+                alt="1"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://cdn.imweb.me/thumbnail/20180220/5a8bc0fa161e0.jpg"
+                alt="2"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://www.econovill.com/news/photo/201910/373999_279256_513.jpg"
+                alt="3"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://img.etnews.com/photonews/1903/1169695_20190327132457_422_0001.jpg"
+                alt="4"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://lh6.googleusercontent.com/proxy/Zzoak6qV2gGETnrsuHkyMxrkWu_Yx5jQhPxIoeMEE-kykhX9Z9GOEiBRzbR4zn4zWHnzs4QHYcSAOgc7_0ptSC2TSZNRHOirSF4cCr44M7Vs"
+                alt="5"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="example1">
+          <div class="example1__line" id="marquee">
+            <div class="example1__message">
+              VR GAME VR MEDICAL VR ARCHITECTURE VR TRAINING VR TOUR VR
+              EDUCATION VR CHAT VR ART VR SPORTS&nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="custom-rt-dev custom-swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://i.pinimg.com/564x/ef/4d/bf/ef4dbfa5ad4b51531975641644bcd8ed.jpg"
+                alt="tour"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://i.pinimg.com/564x/e1/b0/ef/e1b0efd3dfd9f8eb9675211db54b88a4.jpg"
+                alt="education"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://i.pinimg.com/564x/92/89/8f/92898f940ea48dab069928b33c2aacd4.jpg"
+                alt="chat"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://i.pinimg.com/564x/d8/26/7d/d8267df5b0311eb712e27caa92709e0d.jpg"
+                alt="art"
+              />
+            </div>
+            <div class="swiper-slide custom-swiper-slide">
+              <img
+                src="https://i.pinimg.com/564x/43/23/02/432302c6132f73eca5610f0cf3a790a9.jpg"
+                alt="sport"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-11">
+        <div class="contact">
+          <div class="info-con" data-aos="fade-right">Contact</div>
+          <div class="con-box g1" data-aos="fade-down">
+            <span>VR 게임</span>
+            <div class="con-b">
+              당신을 현실에서 멀리 떨어뜨릴 차세대 게임 경험, 바로 VR
+              게임입니다. VR(가상 현실) 게임은 최첨단 기술을 이용해 당신을
+              새로운 디지털 세계로 초대합니다. 이 게임들은 헤드셋을 통해 현실감
+              넘치는 시각과 청각 경험을 제공하여, 당신이 게임 속 주인공이 되어
+              직접 움직이고 상호작용할 수 있게 합니다.
+            </div>
+           
+          </div>
+          <div class="con-box g2" data-aos="fade-up">
+            <span>VR 훈련</span>
+            <div class="con-b">
+              가상 현실(VR) 훈련은 혁신적인 기술을 활용하여 다양한 분야에서
+              실질적인 훈련 경험을 제공하는 방식입니다. 이 기술은 전통적인 훈련
+              방법과 비교해 많은 장점을 가지고 있습니다.
+            </div>
+          </div>
+          <div class="con-box g3" data-aos="fade-down">
+            <span>VR 의료</span>
+            <div class="con-b">
+              VR 의료는 가상 현실 기술을 활용하여 진료, 교육, 재활 등 다양한
+              의료 응용 분야에서 혁신적인 해결책을 제공합니다.
+            </div>
+          </div>
+          <div class="con-box g4" data-aos="fade-up">
+            <span>VR 아트</span>
+            <div class="con-b">
+              VR 기술은 가상 현실을 통해 사용자에게 현실과 유사한 체험을
+              제공하여, 다양한 분야에서 혁신적인 경험과 학습 기회를 제공합니다.
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="foot-b">
+            <div class="l-foot">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mid-foot">
+              <div class="tf-logo">
+                Dream
+                <p>Scape</p>
+              </div>
+              <div class="bf-text">
+                <a href="#">Privacy policy | Cookie policy</a>
+              </div>
+              <div class="bf-text-2">
+                Copyright(c)DreamScape.All rights reserved
+              </div>
+            </div>
+            <div class="r-foot">
+              <div class="foot-body">
+                <div class="acod">Site for</div>
+                <button class="drop-down-btn" onclick="togglePopup()">+</button>
+              </div>
+              <div class="popup" id="popup">
+                <div class="popup-content">
+                  <p>VR gogle</p>
+                  <p>VR chair</p>
+                  <p>Smart glass</p>
+                  <p>VR controller</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button id="scroll-to-top" title="Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+
+      /* 최상단 이동 버튼 */
+      $(document).ready(function() {
+    // 스크롤 위치가 일정 이상일 때 버튼을 표시
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) { // 스크롤 위치가 100px 이상일 때
+        $('#scroll-to-top').fadeIn();
+      } else {
+        $('#scroll-to-top').fadeOut();
+      }
+    });
+
+    // 버튼 클릭 시 페이지 최상단으로 스크롤
+    $('#scroll-to-top').click(function() {
+      $('html, body').animate({ scrollTop: 0 }, 600); // 600ms 동안 애니메이션
+    });
+  });
+
+
+
+
+
+      /* 페이드 인 효과 */
+      AOS.init({
+        duration: 1400,
+        once: true
+      });
+
+      /* 탑바 2차 메뉴 x버튼 */
+      document
+        .getElementById("close-btn")
+        .addEventListener("click", function () {
+          document.getElementById("menu").style.display = "none"; // 메뉴 숨기기
+        });
+
+      /* 탑바 2차메뉴 클릭시 보여짐*/
+      $(document).ready(function() {
+    // 메뉴 열기
+    $('#toggle-menu').on('click', function() {
+      $('#menu').fadeIn();
+      $('#overlay').fadeIn();
+      $('body').css('overflow', 'hidden'); // 스크롤 비활성화
+    });
+
+    // 메뉴 닫기
+    $('#close-btn').on('click', function() {
+      $('#menu').fadeOut();
+      $('#overlay').fadeOut();
+      $('body').css('overflow', 'auto'); // 스크롤 복원
+    });
+
+    // 오버레이 클릭 시 메뉴 닫기
+    $('#overlay').on('click', function() {
+      $('#menu').fadeOut();
+      $('#overlay').fadeOut();
+      $('body').css('overflow', 'auto'); // 스크롤 복원
+    });
+  });
+
+      /* 탑바 섹션 스크롤시 투명 */
+      // 페이지가 로드될 때 실행할 함수
+      document.addEventListener("DOMContentLoaded", function () {
+        var topBarSection = document.querySelector(".top-bar-section"); // top-bar-section 요소 가져오기
+        var lastScrollTop = 0; // 마지막 스크롤 위치 초기화
+        var isScrollingUp = false; // 스크롤 방향 체크 변수
+
+        // 스크롤 이벤트 리스너 등록
+        window.addEventListener("scroll", function () {
+          var currentScroll =
+            window.pageYOffset || document.documentElement.scrollTop; // 현재 스크롤 위치
+
+          // 스크롤 방향 확인
+          if (currentScroll > lastScrollTop) {
+            // 아래로 스크롤 중일 때
+            topBarSection.style.transition = "transform 0.6s ease"; // transform 속성에 대한 transition 추가
+            topBarSection.style.transform = "translateY(-100%)"; // 요소 숨기기
+            isScrollingUp = false; // 스크롤 방향 설정
+          } else {
+            // 위로 스크롤 중일 때
+            if (!isScrollingUp) {
+              // 처음 위로 스크롤 시작할 때만 처리
+              topBarSection.style.transition = "transform 0.6s ease"; // transform 속성에 대한 transition 추가 (천천히 보이기)
+              topBarSection.style.transform = "translateY(0)"; // 요소 보이기
+              isScrollingUp = true; // 스크롤 방향 설정
+            }
+          }
+
+          lastScrollTop = currentScroll; // 마지막 스크롤 위치 업데이트
+        });
+
+        // 초기 스크롤 위치에 따라 탑바의 초기 상태 설정
+        var currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScroll > lastScrollTop) {
+          topBarSection.style.transform = "translateY(-100%)"; // 아래로 스크롤 중일 때 초기 숨김 상태 설정
+        } else {
+          topBarSection.style.transform = "translateY(0)"; // 위로 스크롤 중일 때 초기 보이는 상태 설정
+        }
+      });
+
+
+
+      // 검색창 나타나는 효과
+      $(document).ready(function() {
+    $('#search-toggle').click(function(event) {
+      event.preventDefault(); // 기본 링크 동작 방지
+      $('.search-box').toggleClass('show'); // 'show' 클래스를 토글하여 검색창 표시/숨김
+    });
+
+    // 클릭시 검색창 이외의 곳을 클릭하면 검색창이 닫히도록 할 경우
+    $(document).click(function(event) {
+      if (!$(event.target).closest('#search-toggle, .search-box').length) {
+        $('.search-box').removeClass('show'); // 'show' 클래스를 제거하여 검색창 숨김
+      }
+    });
+  });
+
+
+
+
+
+
+      /*  vr 카테고리 클릭시  카테고리로 스크롤 움직임  */
+      $(document).ready(function () {
+        // VR-GOGLE 항목 클릭 시 스크롤 처리
+        $(".item.i1.rot").click(function (event) {
+          event.preventDefault(); // 기본 링크 동작 방지
+          $("html, body").animate(
+            {
+              scrollTop: $(".page-6").offset().top,
+            },
+            800
+          ); // 스크롤 시간 (밀리초)
+        });
+      });
+
+      $(".item.i2.rot").click(function (event) {
+        event.preventDefault(); // 기본 링크 동작 방지
+        $("html, body").animate(
+          {
+            scrollTop: $(".page-7").offset().top,
+          },
+          800
+        ); // 스크롤 시간 (밀리초)
+      });
+
+      $(".item.i3.rot").click(function (event) {
+        event.preventDefault(); // 기본 링크 동작 방지
+        $("html, body").animate(
+          {
+            scrollTop: $(".page-8").offset().top,
+          },
+          800
+        ); // 스크롤 시간 (밀리초)
+      });
+
+      $(".item.i4.rot").click(function (event) {
+        event.preventDefault(); // 기본 링크 동작 방지
+        $("html, body").animate(
+          {
+            scrollTop: $(".page-9").offset().top,
+          },
+          800
+        ); // 스크롤 시간 (밀리초)
+      });
+
+      /* swiper 효과 */
+
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: "3",
+        spaceBetween: 50,
+        loop: true, // 선택 사항: 루프 설정
+        autoplay: {
+          delay: 4000, // 3초마다 자동으로 슬라이드
+          disableOnInteraction: false, // 사용자 인터랙션 후에도 자동 재생 유지
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      /* 커서
+      const $cursor = $('.cursor');
+      const $cursorShadow = $('.cursor-shadow');
+  
+  
+      /* 마우스 커서 이동 효과 */
+      // $(window).mousemove(function (e) {
+      //  $cursor.css({
+      ///    top: e.clientY,
+      //    left: e.clientX
+      //  });
+
+      //  $cursorShadow.css({
+      //   top: e.clientY,
+      //    left: e.clientX//
+      //  });
+      // });
+
+      // $('.cursor-big').css('background-color', 'green');
+
+      $(".cursor-big").mouseenter(function () {
+        $("html").addClass("need-to-cursor-big");
+      });
+
+      $(".cursor-big").mouseleave(function () {
+        $("html").removeClass("need-to-cursor-big");
+      });
+
+      /* 고글 회전 */
+      const imageContainer = document.getElementById("image-container");
+      const image = document.getElementById("image");
+      const resetButton = document.getElementById("reset-button");
+
+      let isDragging = false;
+      let startX = 0;
+      let startY = 0;
+      let currentXRotation = 0;
+      let currentYRotation = 0;
+      const initialRotation = { x: 0, y: 0 };
+
+      // 마우스 다운 이벤트 리스너: 드래그 시작
+      imageContainer.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+      });
+
+      // 마우스 이동 이벤트 리스너: 이미지 회전
+      imageContainer.addEventListener("mousemove", (e) => {
+        if (isDragging) {
+          const deltaX = e.clientX - startX;
+          const deltaY = e.clientY - startY;
+
+          currentYRotation += deltaX * 0.5; // X 축을 중심으로 회전
+          currentXRotation -= deltaY * 0.5; // Y 축을 중심으로 회전
+
+          image.style.transform = `rotateX(${currentXRotation}deg) rotateY(${currentYRotation}deg)`;
+
+          startX = e.clientX;
+          startY = e.clientY;
+        }
+      });
+
+      // 마우스 업 이벤트 리스너: 드래그 종료
+      imageContainer.addEventListener("mouseup", () => {
+        isDragging = false;
+      });
+
+      // 마우스 떠남 이벤트 리스너: 드래그 종료
+      imageContainer.addEventListener("mouseleave", () => {
+        isDragging = false;
+      });
+
+      // Reset 버튼 클릭 이벤트 리스너: 이미지 회전 초기화
+      resetButton.addEventListener("click", () => {
+        // 회전을 초기 상태로 재설정
+        currentXRotation = initialRotation.x;
+        currentYRotation = initialRotation.y;
+        image.style.transform = `rotateX(${currentXRotation}deg) rotateY(${currentYRotation}deg)`;
+      });
+
+      /* vr 컨트롤러 움직임 페이지 */
+
+      const imageContainer2 = document.getElementById("image-container-2");
+      const image2 = document.getElementById("image-2");
+      const resetButton2 = document.getElementById("reset-button-2");
+
+      let isDragging2 = false;
+      let startX2 = 0;
+      let startY2 = 0;
+      let currentXRotation2 = 0;
+      let currentYRotation2 = 0;
+      const initialRotation2 = { x: 0, y: 0 };
+
+      imageContainer2.addEventListener("mousedown", (e) => {
+        isDragging2 = true;
+        startX2 = e.clientX;
+        startY2 = e.clientY;
+      });
+
+      imageContainer2.addEventListener("mousemove", (e) => {
+        if (isDragging2) {
+          const deltaX2 = e.clientX - startX2;
+          const deltaY2 = e.clientY - startY2;
+
+          currentYRotation2 += deltaX2 * 0.5;
+          currentXRotation2 -= deltaY2 * 0.5;
+
+          image2.style.transform = `rotateX(${currentXRotation2}deg) rotateY(${currentYRotation2}deg)`;
+
+          startX2 = e.clientX;
+          startY2 = e.clientY;
+        }
+      });
+
+      imageContainer2.addEventListener("mouseup", () => {
+        isDragging2 = false;
+      });
+
+      imageContainer2.addEventListener("mouseleave", () => {
+        isDragging2 = false;
+      });
+
+      resetButton2.addEventListener("click", () => {
+        currentXRotation2 = initialRotation2.x;
+        currentYRotation2 = initialRotation2.y;
+        image2.style.transform = `rotateX(${currentXRotation2}deg) rotateY(${currentYRotation2}deg)`;
+      });
+
+      /* 수직 방향 슬라이더 페이지 9  */
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".custom-swiper-container", {
+          direction: "vertical",
+          loop: true,
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+          mousewheel: true,
+          speed: 800,
+        });
+      });
+
+      /* vr 컨트롤러 텍스트 수직 반복 애니메이션 */
+
+      const movingText = document.getElementById("movingText");
+      let position = 100; // 시작 위치: 컨테이너 아래쪽
+      let direction = -0.2; // 애니메이션 방향: 위쪽으로 이동
+
+      function animate() {
+        position += direction; // 방향에 따라 위치 조정
+
+        // 위치가 컨테이너 위쪽으로 벗어나면 초기화
+        if (position < -100) {
+          position = 100;
+        }
+
+        movingText.style.top = position + "%"; // 위치 설정
+
+        requestAnimationFrame(animate); // 다음 프레임 요청
+      }
+
+      animate(); // 애니메이션 시작
+
+      function togglePopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display =
+          popup.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <!-- 세로 스크롤 -->
+    <script>
+      const speed = 3; // pixels at frame
+      const gap = parseInt(
+        getComputedStyle($(".example1")[0]).getPropertyValue("--gap"),
+        10
+      ); // IMPORTANT: value should be equal to --gap variable at css
+      const $marquee = $("#marquee");
+
+      const newItem = () => {
+        return $marquee.find("div").first().clone();
+      };
+
+      const numerify = (str) => {
+        return +str.replace(/[^\d-]/g, "");
+      };
+
+      const fillMarquee = () => {
+        while (
+          $marquee.find("div").length < 2 ||
+          ($marquee.find("div").first().outerWidth() + gap) *
+            $marquee.find("div").length -
+            gap <
+            window.innerWidth * 1.5
+        ) {
+          $marquee.append(newItem());
+        }
+
+        $marquee.find("div").each(function () {
+          if ($(this).css("position") !== "absolute") {
+            $(this).css("position", "relative");
+          }
+        });
+      };
+      fillMarquee();
+      $(window).resize(fillMarquee);
+
+      const render = () => {
+        $marquee.find("div").each(function () {
+          const $item = $(this);
+          const leftPos = numerify($item.css("left")) || 0;
+
+          if (leftPos < 0 && leftPos < -$item.outerWidth()) {
+            $marquee.find("div").each(function () {
+              $(this).css("left", gap / 2 - 1 + "px");
+            });
+            $item.remove();
+            $marquee.append(newItem());
+          }
+          $item.css("left", leftPos - speed + "px");
+        });
+        requestAnimationFrame(render);
+      };
+
+      requestAnimationFrame(() => {
+        render();
+      });
+    </script>
+
+    <!-- 3d 효과 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script>
+      // Three.js 기본 설정
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // 조명 추가
+      const light = new THREE.DirectionalLight(0xffffff, 1);
+      light.position.set(1, 1, 1).normalize();
+      scene.add(light);
+
+      // GLTFLoader를 사용하여 모델 로드
+      const loader = new THREE.GLTFLoader();
+      loader.load(
+        "images/scene.gltf",
+        function (gltf) {
+          scene.add(gltf.scene);
+          renderer.render(scene, camera);
+        },
+        undefined,
+        function (error) {
+          console.error(error);
+        }
+      );
+
+      // 카메라 위치 설정
+      camera.position.z = 5;
+
+      // 애니메이션 루프
+      function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script> -->
+  </body>
+</html>

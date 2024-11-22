@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/art gallery.css">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- 스무스 스크롤바 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+  <!--  aos 라이브러리  -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--gsap-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- 로데쉬 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+
+  <!--  구글 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <title>MONEMAIN</title>
+</head>
+
+<body>
+
+
+  <div class="cursor"></div>
+  <div class="cursor-shadow"></div>
+
+  <div class="wrap">
+    <hr class="opacity-30">
+    <section id="header_txt">
+      <div class="logobar">
+        <div class="logo">MONE</div>
+      </div>
+      <div class="menubar">
+        <ul>
+          <li><a href="exhibition.html">전시</a></li>
+          <li><a href="#">방문</a></li>
+          <li><a href="#">소장품</a></li>
+          <li><a href="#">미술연구</a></li>
+          <li><a href="#">디지털 미술관</a></li>
+        </ul>
+      </div>
+      <div class="hide_menubar">
+        <hr class="opacity-20">
+        <p>
+          <br> 서울 모네 미술관에 오신 것을 환영합니다. <br><br>
+          <i class="fa-solid fa-house"></i> &nbsp;운영 시간 10:00 - 18:00
+        </p>
+        <div class="hide_menubar_wrap">
+          <ul>
+            <li>
+              <ul>
+                <li><a href="">현재전시</a></li>
+                <li><a href="">예정전시</a></li>
+                <li><a href="">지난전시</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">오시는 길</a></li>
+                <li><a href="">대중교통</a></li>
+                <li><a href="">시설대관</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">신 소장품</a></li>
+                <li><a href="">소장품 대여</a></li>
+                <li><a href="">소장품 기증</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">참고도서</a></li>
+                <li><a href="">발간자료</a></li>
+                <li><a href="">연구기록</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="">VR 미술관</a></li>
+                <li><a href="">오디오 가이드</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="icon_box">
+          <a href="#" class="dotbo"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <span><i class="fa-solid fa-user"></i></span>
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+      <div class="hide_side_bar hide_search_bar">
+        <div class="search_bar">
+          <input type="text" placeholder="검색어를 입력하세요">
+          <button class="search-button">검색</button>
+        </div>
+      </div>
+      <div class="hide_side_bar hide_menu_bar">
+        <button class="close_menu_bar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="hide-menu-1">
+          <ul class="regular-menu">
+            <li><span>소개</span></li>
+            <li><a href="#">미술관 소개</a></li>
+            <li><a href="#">설립 이념.건축</a></li>
+            <li><a href="#">관람 안내</a></li>
+            <li><a href="#">우리 미술관?</a></li>
+            <hr class="side-hr">
+            <li><span>전시</span></li>
+            <li><a href="exhibition.html">현재 전시</a></li>
+            <li><a href="exhibition.html">지난 전시</a></li>
+            <li><a href="exhibition.html">예정 전시</a></li>
+            <li><a href="exhibition.html">도록</a></li>
+            <hr class="side-hr">
+            <li><span>프로그램</span></li>
+            <li><a href="program.html">상설교육</a></li>
+            <li><a href="program.html">특별교육</a></li>
+            <li><a href="program.html">부대 행사</a></li>
+            <li><a href="program.html">방문 행사</a></li>
+            <hr class="side-hr">
+            <li><span>소식</span></li>
+            <li><a href="news.html">공지사항</a></li>
+            <li><a href="news.html">연간기부금내역</a></li>
+            <li><a href="news.html">실적 내역</a></li>
+            <li><a href="news.html">오시는 길</a></li>
+          </ul>
+          <ul class="accordion">
+            <li>
+              <a class="accordion-header" href="#">
+                소개
+                <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+              </a>
+              <ul class="accordion-content">
+                <li><a href="#">미술관 소개</a></li>
+                <li><a href="#">설립 이념.건축</a></li>
+                <li><a href="#">관람 안내</a></li>
+                <li><a href="#">우리 미술관?</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="accordion-header" href="#">
+                전시
+                <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+              </a>
+              <ul class="accordion-content">
+                <li><a href="exhibition.html">현재 전시</a></li>
+                <li><a href="exhibition.html">지난 전시</a></li>
+                <li><a href="exhibition.html">예정 전시</a></li>
+                <li><a href="exhibition.html">도록</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="accordion-header" href="#">
+                프로그램
+                <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+              </a>
+              <ul class="accordion-content">
+                <li><a href="program.html">상설교육</a></li>
+                <li><a href="program.html">특별교육</a></li>
+                <li><a href="program.html">부대 행사</a></li>
+                <li><a href="program.html">방문 행사</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="accordion-header" href="#">
+                소식
+                <span class="arrow-1">&#9660;</span> <!-- 아래 화살표 -->
+              </a>
+              <ul class="accordion-content">
+                <li><a href="news.html">공지사항</a></li>
+                <li><a href="news.html">연간기부금내역</a></li>
+                <li><a href="news.html">실적 내역</a></li>
+                <li><a href="news.html">오시는 길</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="my-page">
+        <div class="top-my">
+          <h1>ART GALLERY</h1>
+          <form action="">
+            <div class="int-box"></div>
+            <div class="int-area">
+              <input type="text" name="id" id="id" autocomplete="off" required>
+              <label for="id">아이디</label>
+            </div>
+            <div class="int-area">
+              <input type="text" name="id" id="id" autocomplete="off" required>
+              <label for="pw">비밀번호</label>
+            </div>
+            <div class="btn-int">
+              <button type="submit">로그인</button>
+            </div>
+          </form>
+          <div class="caption">
+            <a href="#">비밀번호를 잊으셨나요 ?</a>
+          </div>
+        </div>
+      </div>
+      <div id="header_box"></div>
+    </section>
+
+    <section id="section-1">
+      <a class="banner" href="#">
+        <div class="txt_box" data-aos="fade-up">
+          <h2>사물은 어떤 꿈을 꾸는가 </h2>
+          <br>
+          <span class="fs-40">&lt;사물의 역사와 기록&gt;</span>
+        </div>
+        <img src="img/banner_01.jpg" alt="화면전환배너">
+      </a>
+      <a class="banner" href="#">
+        <div class="txt_box">
+          <h2>아트 갤러리 홀</h2>
+          <br>
+          <span class="fs-40">&lt;아트 갤러리홀에 대해&gt;</span>
+        </div>
+        <img src="img/banner_02.jpg" alt="">
+      </a>
+    </section>
+
+    <hr class="opacity-20">
+
+    <section id="section-2">
+      <h2>Exhibitions</h2>
+    </section>
+
+    <hr class="opacity-20">
+
+    <section id="section-3">
+      <div class="container container_1n">
+        <div class="left">
+          <div class="txt_box">
+            <h2>2024 MOMA - 프로젝트 A
+            </h2>
+            <br>
+            <h3>2024.01.01-2024.12.31</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img class="cursor-big"
+            src="https://www.muni.org/Departments/Public_Works_Administration/PublicArt/PublishingImages/Word%20Cloud%20-%20detail%206_reduced.jpg"
+            alt="aos배너1">
+        </div>
+      </div>
+      <div class="container container_2n">
+        <div class="left"><img class="cursor-big" src="https://media.mcachicago.org/image/IBI5PNO2/original.jpg"
+            alt="aos배너2"></div>
+        <div class="right">
+          <div class="txt_box">
+            <h2>2024 MOMA - 프로젝트 B</h2>
+            <br>
+            <h3>2024.01.01-2024.12.31</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container container_1n">
+        <div class="left">
+          <div class="txt_box">
+            <h2>2024 MOMA - 프로젝트 C</h2>
+            <br>
+            <h3>2024.01.01-2024.12.31</h3>
+          </div>
+        </div>
+        <div class="right"><img class="cursor-big" src="img/sec1.jpg" alt="aos배너3"></div>
+      </div>
+
+      <hr class="opacity-20">
+
+    </section>
+
+    <section class="section-4 relative overflow-hidden">
+      <div class="text_back border-text text-10  mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.04"
+        data-mousemove-effect1-ver-res="0.04">
+        Lorem ipsum dolor
+        <br>
+        amet consectetur
+      </div>
+      <div class="text_front text-6 mt-10 mousemove-effect-1-el" data-mousemove-effect1-hor-res="-0.04"
+        data-mousemove-effect1-ver-res="-0.04">
+        ART & GALLERY
+        <br>
+        voluptas nemo
+      </div>
+    </section>
+
+    <div id="inner">
+      <section id="section-5">
+        <div class="ex-text">PROGRAM</div>
+        <hr class="bd opacity-20">
+        <div class="mid-sm-slide" id="swiper-slide-container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-img ">
+                  <img src="https://www.jungle.co.kr/image/a17f25ce4a1cb9660d7a74f4" alt="slide1">
+                </div>
+                <div class="slide-text">
+                  <span><a href="program.html">《 문화예술 종합 프로그램 '해피투게더' 》</a></span> <br>
+                  <div class="small"><a href="#">2024.07.31 ~ 08.30</a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img">
+                  <img src="https://cdn.newscj.com/news/photo/201207/116047_79219_2012.jpg" alt="slide2">
+                </div>
+                <div class="slide-text">
+                  <span><a href="program.html">《 작가와 함께하는 예술 놀이터 》</a></span> <br>
+                  <div class="small"><a href="#">2024.07.15 ~ 08.14</a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img">
+                  <img src="https://cdn.smedaily.co.kr/news/photo/202211/243728_181351_3441.jpg" alt="slide3">
+                </div>
+                <div class="slide-text">
+                  <span><a href="program.html">《 청각 장애 아동 감상 프로그램 》</a></span> <br>
+                  <div class="small"><a href="#">2024.06.01 ~ 12.01</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="section-6">
+        <div class="news-con">
+          <div class="news-txt tn" data-aos="fade-up">
+            <div class="bold" data-aos="fade-up"><a href="exhibition.html">전시(Exhibition)</a>
+              <div class="arrow"><span><a href="#"><i class="fa-solid fa-arrow-right"></i></a></span></div>
+            </div> <br>
+            <div class="light" data-aos="fade-up">모네 아트갤러리에서 진행되는 다양한 전시를 만나보세요.</div>
+          </div>
+          <div class="news-txt" data-aos="fade-up">
+            <div class="bold" data-aos="fade-up"><a href="news.html">뉴스 (News)</a>
+              <div class="arrow" data-aos="fade-up"><span><a href="#"><i class="fa-solid fa-arrow-right"></i></a></span>
+              </div>
+            </div> <br>
+            <div class="light" data-aos="fade-up">최신 아트 뉴스를 소개합니다.</div>
+          </div>
+          <div class="news-txt" data-aos="fade-up">
+            <div class="bold" data-aos="fade-up"><a href="program.html">프로그램 (Program)</a>
+              <div class="arrow" data-aos="fade-up"><span><a href="#"><i class="fa-solid fa-arrow-right"></i></a></span>
+              </div>
+            </div> <br>
+            <div class="light" data-aos="fade-up">모네 아트갤러리의 특별한 프로그램들을 안내합니다.</div>
+          </div>
+
+        </div>
+      </section>
+      <section id="section-7">
+        <div class="ex-text">CENTER</div>
+        <hr class="bd opacity-20">
+
+        <div class="img_con">
+          <div class="dis-box box1">
+            <div class="back-dis"></div>
+            <div class="dis-txt">모네 갤러리 서울</div>
+            <div class="dis-txt-2">대전시 유성구, 반석동</div>
+          </div>
+          <div class="dis-box box2">
+            <div class="back-dis"></div>
+            <div class="dis-txt">모네 갤러리 부산</div>
+            <div class="dis-txt-2"> 서울시 강남구, 한남동</div>
+          </div>
+        </div>
+        <div class="mobile_con">
+          <div class="in_con">
+            <div class="img_box">
+              <img src="img/gallery_.jpg" alt="seoul">
+            </div>
+            <div class="txt_box">모네 갤러리 서울</div>
+          </div>
+          <div class="in_con">
+            <div class="img_box">
+              <img src="img/center.jpg" alt="busan">
+            </div>
+            <div class="txt_box">모네 갤러리 부산</div>
+          </div>
+        </div>
+
+      </section>
+      <section id="section-8">
+        <div class="ex-text">MORE INFO</div>
+        <hr class="bd opacity-20">
+        <div class="section_wrap">
+          <div class="lt-foot">
+            <div class="top-map">
+
+              <div class="top-box1">
+                <div class="tb-img">
+                  <a href=""> <i class="fa-solid fa-file"></i></a>
+                </div>
+                <div class="tb-text">
+                  <a href="#" class="line-4"> 이용약관 </a>
+                </div>
+              </div>
+              <div class="top-box2">
+                <div class="tb-img">
+                  <a href="#"><i class="fa-solid fa-question"></i></a>
+                </div>
+                <div class="tb-text"><a href="#" class="line-3"> 자주 묻는 질문 </a></div>
+              </div>
+            </div>
+            <div class="bot-map"><a href="#" class="discover"> 모네 갤러리 멤버쉽 가입</a>
+              <img src="https://i.pinimg.com/564x/b8/49/8e/b8498edc0c2a9a1139f4840a4cd354b9.jpg" alt="">
+            </div>
+          </div>
+          <div class="rt-foot">
+            <!--
+          <div class="txt_box">
+            Map
+          </div>
+          -->
+            <div class="img_box">
+              <img src="https://www.mmca.go.kr/assetGwan/images/contents/seoul/1f_img_pc.png" alt="1">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer">
+      <div id="inner">
+        <div class="footer_inner">
+          <div class="footer_top">
+            <div class="lt-bot">
+              <div class="bot-1">MONE</div>
+              <div class="bot-2">
+                <span>상호 : 아트앤갤러리 | 대표자 : 남승연, 김학현 | 개인정보 <br>
+                  사업자등록번호 : 000-00-00000 | 이메일 : help@ddadada.me <br>
+                  주소 : 대전시 서구 민초로8길 56-1
+                </span>
+              </div>
+              <hr class="bot-hr">
+              <div class="bot-3">
+                Copyright <i class="fa-regular fa-copyright"></i> 아트앤갤러리
+              </div>
+            </div>
+            <div class="rt-bot">
+              <div class="rt-bot-con_1">
+                <div class="r-bot-1">
+                  <span>
+                    <a href="#">
+                      <span>위젯</span>
+                      <span>튜토리얼</span>
+                      <span>CODE</span>
+                      <span>EXTRA</span>
+                    </a>
+                  </span>
+                </div>
+                <div class="r-bot-2">
+                  <span>
+                    <a href="#">
+                      <span>이용약관</span>
+                      <span class="b-30">개인정보처리방침</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="rt-bot-con_2">
+                <span class="icons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+
+                <div class="icon-btn">
+                  <span>관련사이트</span>
+                  <div class="btn-cont">
+                    <ul>
+                      <li><a href="#">아트센터 대전</a></li>
+                      <li><a href="#">아트센터 서울</a></li>
+                      <li><a href="#">아트갤러리홀</a></li>
+                      <li><a href="#">멤버십 제휴</a></li>
+                      <li><a href="#">저작권</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom">
+            <div class="bot-5">
+            </div>
+            Copyright <i class="fa-regular fa-copyright"></i> 아트앤갤러리
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+  <script>
+    // 페이드 인 아웃 효과
+    AOS.init({
+      duration: 1400,
+      once: true
+    });
+
+    // 커서 효과
+    const $cursor = $('.cursor');
+    const $cursorShadow = $('.cursor-shadow');
+
+    $(window).mousemove(function (e) {
+      $cursor.css({
+        top: e.clientY,
+        left: e.clientX
+      });
+
+      $cursorShadow.css({
+        top: e.clientY,
+        left: e.clientX
+      });
+    });
+
+
+    $('.cursor-big').mouseenter(function () {
+      $('html').addClass('need-to-cursor-big');
+    });
+
+    $('.cursor-big').mouseleave(function () {
+      $('html').removeClass('need-to-cursor-big');
+    });
+
+
+    //  top 버튼 클릭시 최상단 이동 코드
+    $(document).ready(function () {
+      // 버튼 초기 상태를 숨김
+      $('.top-btn').hide();
+
+      // 스크롤 이벤트 리스너
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) { // 스크롤 위치가 100px 이상일 때
+          $('.top-btn').stop().fadeTo(100, 1); // 600ms 동안 점차적으로 보이게 함
+        } else {
+          $('.top-btn').stop().fadeTo(100, 0); // 600ms 동안 점차적으로 숨김
+        }
+      });
+
+      // 버튼 클릭 이벤트 리스너
+      $('.top-btn').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 600); // 600ms 동안 최상단으로 스크롤
+      });
+    });
+
+
+
+
+  // top 버튼 위치 조정 시작
+    
+  $(document).ready(function() {
+      var $topBtn = $('.top-btn');
+      var $footer = $('.footer');
+
+      function updateButtonPosition() {
+        var footerOffsetTop = $footer.offset().top;
+        var windowHeight = $(window).height();
+        var buttonTop = '90%'; // 기본 버튼 위치
+
+        // 푸터가 보이는지 확인
+        if (footerOffsetTop <= windowHeight + $(window).scrollTop()) {
+          buttonTop = '58%'; // 푸터가 보일 때 버튼 위치
+        }
+
+        $topBtn.css('top', buttonTop);
+      }
+
+      // 스크롤 이벤트에 따라 버튼 위치 업데이트
+      $(window).on('scroll', updateButtonPosition);
+
+      // 페이지 로드 시 초기 위치 확인
+      updateButtonPosition();
+    });
+
+  // top 버튼 위치 조정 끝
+
+
+
+
+
+
+
+
+
+
+
+    // 초기 시작시 화면 페이드인
+    $(window).on('load', function () {
+      $('body').css('opacity', '1');
+    });
+
+    //숨은 메뉴바 나오는 효과
+    $(document).ready(function () {
+      $(document).ready(function () {
+        $('.menubar').hover(
+          function () {
+            $('.hide_menubar').addClass('active');
+            if ($('.dark-overlay').length === 0) {
+              $('body').append('<div class="dark-overlay"></div>');
+            }
+            $('.dark-overlay').fadeIn();
+          },
+          function () {
+            if (!$('.hide_menubar').is(':hover')) {
+              $('.hide_menubar').removeClass('active');
+              $('.dark-overlay').fadeOut(function () {
+                $(this).remove();
+              });
+            }
+          }
+        );
+        $('.hide_menubar').mouseleave(function () {
+          $('.hide_menubar').removeClass('active');
+          $('.dark-overlay').fadeOut(function () {
+            $(this).remove();
+          });
+        });
+      });
+
+
+
+
+      /* 숨은 사이드바 및 오버레이 */
+
+      $(document).ready(function () {
+        var $myPage = $('.my-page');
+        var $searchSidebar = $('.hide_search_bar');
+        var $menuSidebar = $('.hide_menu_bar');
+        var $overlay = $('.overlay');
+        var $sidebarToggle = $('.fa-bars');
+        var $closeButton = $('.close_menu_bar');
+        var $searchIcon = $('.sidebar a').eq(0);
+        var $menuIcon = $('.sidebar a').eq(2);
+        var $sidebarLinks = $('.sidebar a');
+        var $userIcon = $('.fa-user');
+
+        // 마이페이지의 가시성 전환
+        $userIcon.on('click', function (e) {
+          e.preventDefault();
+          $myPage.toggle();
+          $overlay.toggleClass('active'); // 오버레이 토글
+        });
+
+        // 마이페이지 외부 클릭 시 숨기기
+        $(document).on('click', function (e) {
+          var $target = $(e.target);
+
+          if ($myPage.is(':visible') && !$target.closest('.my-page').length && !$target.closest('.fa-user').length) {
+            $myPage.hide();
+            $overlay.removeClass('active'); // 오버레이 숨기기
+          }
+
+          if ($searchSidebar.hasClass('active') && !$target.closest('.hide_search_bar').length && !$target.closest('.sidebar').length) {
+            $searchSidebar.removeClass('active');
+            $overlay.removeClass('active');
+            $('body').removeClass('no-scroll');
+          }
+
+          if ($menuSidebar.hasClass('active') && !$target.closest('.hide_menu_bar').length && !$target.closest('.sidebar').length) {
+            $menuSidebar.removeClass('active');
+            $overlay.removeClass('active');
+            $('body').removeClass('no-scroll');
+          }
+        });
+
+        // 마이페이지 내부 클릭 방지
+        $myPage.on('click', function (e) {
+          e.stopPropagation(); // 마이페이지 내부 클릭이 문서로 전파되지 않도록 방지
+        });
+
+        // 마이페이지 닫기 버튼 클릭 시
+        $closeButton.on('click', function () {
+          $myPage.hide();
+          $overlay.removeClass('active'); // 오버레이 숨기기
+        });
+
+        // 사이드바 및 오버레이 전환 함수
+        function toggleSidebar(sidebar, iconToHighlight) {
+          sidebar.toggleClass('active');
+          $overlay.toggleClass('active');
+          $sidebarLinks.removeClass('active'); // 모든 아이콘의 색상 초기화
+          iconToHighlight.addClass('active'); // 클릭된 아이콘 강조
+          $('body').toggleClass('no-scroll', $searchSidebar.hasClass('active') || $menuSidebar.hasClass('active'));
+        }
+
+        // 검색 사이드바 토글
+        $searchIcon.click(function (e) {
+          e.preventDefault(); // 기본 링크 동작 방지
+          toggleSidebar($searchSidebar, $searchIcon);
+          $menuSidebar.removeClass('active'); // 메뉴 사이드바가 열려 있으면 닫기
+        });
+
+        // 메뉴 사이드바 토글
+        $menuIcon.click(function (e) {
+          e.preventDefault(); // 기본 링크 동작 방지
+          toggleSidebar($menuSidebar, $menuIcon);
+          $searchSidebar.removeClass('active'); // 검색 사이드바가 열려 있으면 닫기
+        });
+
+        // 오버레이 클릭 시 사이드바 및 마이페이지 닫기
+        $overlay.on('click', function () {
+          $searchSidebar.removeClass('active');
+          $menuSidebar.removeClass('active');
+          $myPage.hide(); // 마이페이지도 닫기
+          $overlay.removeClass('active');
+          $('body').removeClass('no-scroll');
+          $sidebarLinks.removeClass('active');
+        });
+
+        // 사이드바 닫기 버튼 클릭 시
+        $('.close_menu_bar').on('click', function () {
+          $menuSidebar.removeClass('active');
+          $overlay.removeClass('active');
+          $('body').removeClass('no-scroll');
+        });
+
+        // 헤더 박스 슬라이드 다운 애니메이션
+        $('#header_box').css('display', 'none').slideDown(1000);
+
+        // 페이지 로드 시 헤더 텍스트 색상 변경 애니메이션
+        $('#header_txt').css('color', 'white');
+
+        // 배너 이미지 스케일 다운 및 밝기 조정
+        $('#section-1 .banner img').css({
+          'filter': 'brightness(60%)'
+        });
+        setTimeout(function () {
+          $('#section-1 .banner img').css({
+            'transform': 'scale(1)',
+            'filter': 'brightness(80%)'
+          });
+        }, 800);
+
+        // 사이드바 토글 버튼 클릭 시 사이드바와 오버레이 처리
+        $sidebarToggle.on('click', function () {
+          $menuSidebar.toggleClass('active');
+          $overlay.toggleClass('active');
+        });
+
+        // 아코디언 메뉴 클릭 시
+        $(document).on('click', '.accordion-header', function () {
+          $(this).toggleClass('active');
+          $(this).next('.accordion-content').slideToggle();
+          $(this).find('.arrow-1').toggleClass('rotate');
+        });
+      });
+
+
+
+
+      //section-1 배너 자동 슬라이드 수정중 수정중 수정중 수정중 수정중 수정중 수정중
+
+      /*ⓐ 두번째 배너가 부자연스러운 마크업 시작*/ /* 수정 */
+      $(document).ready(function () {
+        var banners = $('#section-1 .banner');
+        var currentIndex = 0;
+
+        function showBanner(index) {
+          banners.eq(index).css('z-index', 10).addClass('active');
+        }
+
+        function hideBanner(index) {
+          banners.eq(index).removeClass('active');
+          setTimeout(function () {
+            banners.eq(index).css('z-index', -1);
+          }, 1000); // z-index 변경을 1초 지연시킴
+        }
+
+        function nextBanner() {
+          hideBanner(currentIndex);
+          currentIndex = (currentIndex + 1) % banners.length;
+          showBanner(currentIndex);
+        }
+
+        showBanner(currentIndex);
+        setInterval(nextBanner, 5000);
+      });
+      /*ⓐ 두번째 배너가 부자연스러운 마크업 끝*/ /* 수정 */
+
+      /*  ⓑ 코드는 조금 다르지만 여전히 두번째 배너가 부자연스러운 마크업 시작 */
+      /*
+      $(document).ready(function () {
+          var banners = $('#section-1 .banner'); 
+          var currentIndex = 0; 
+      
+          function showBanner(index) {
+              banners.eq(index).css('display', 'block').animate({ opacity: 1 }, 1000);
+          }
+      
+          function hideBanner(index) {
+              banners.eq(index).animate({ opacity: 0 }, 1000, function () {
+                  $(this).css('display', 'none');
+              });
+          }
+      
+          function nextBanner() {
+              hideBanner(currentIndex);
+              currentIndex = (currentIndex + 1) % banners.length;
+              showBanner(currentIndex);
+          }
+      
+          // 초기 배너 설정
+          showBanner(currentIndex);
+      
+          // 5초마다 배너 변경
+          setInterval(nextBanner, 5000);
+      }); */
+      /*  ⓑ 코드는 조금 다르지만 여전히 두번째 배너가 부자연스러운 마크업 끝 */
+
+
+
+
+
+      //section-1 배너 자동 슬라이드 수정중 수정중 수정중 수정중 수정중 수정중 수정중
+
+
+
+
+      // 스크롤 시 section-2 슬라이드 업 애니메이션
+      $(window).on('scroll', function () {
+        $('#section-2').each(function () {
+          var elementTop = $(this).offset().top;
+          var windowTop = $(window).scrollTop();
+          var windowHeight = $(window).height();
+
+          if (elementTop < windowTop + windowHeight - 100) { // 화면에 들어오면 애니메이션 적용
+            $(this).css({
+              'opacity': '1',
+              'transform': 'translateY(0)'
+            });
+          }
+        });
+
+        // 스크롤 시 section-3 container 밝아지는 애니메이션
+        $('.container').each(function () {
+          var elementTop = $(this).offset().top;
+          var windowTop = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (elementTop < windowTop + windowHeight - 50) { // 화면에 들어오면 애니메이션 적용
+            $(this).css({
+              'opacity': '1',
+              'transform': 'translateY(0)'
+            });
+          }
+        });
+      }).trigger('scroll'); // 페이지 로드 시에도 애니메이션 적용
+    });
+
+    // section3 > container 오버시 비율조정 애니메이션
+    $(document).ready(function () {
+      $('#section-3 .container_1n, #section-3 .container_2n').hover(
+        function () {
+          $(this).addClass('hovered');
+        }
+      );
+    });
+
+    // section3 contaienr 스크롤하면 보여지는 애니메이션
+    $(window).on('scroll', function () {
+      var $window = $(this);
+      var windowHeight = $window.height();
+      var scrollTop = $window.scrollTop();
+      $('#section-3 .container').each(function () {
+        var $container = $(this);
+        var containerTop = $container.offset().top;
+        var containerHeight = $container.outerHeight();
+
+        var startFadeIn = containerTop - windowHeight; // 컨테이너의 상단이 화면의 하단에 도달하기 시작한 시점
+        var endFadeIn = containerTop + containerHeight; // 컨테이너의 상단이 화면의 상단에 도달한 시점
+        var progress = (scrollTop - startFadeIn) / (endFadeIn - startFadeIn); // 컨테이너가 화면에 얼마나 노출되었는지 비율 계산
+        progress = Math.max(0, Math.min(1, progress)); // 비율을 0과 1 사이로 클램핑
+        $container.css('opacity', progress); // opacity 설정
+      });
+    });
+
+    // 스와이퍼
+    // 섹션-5 슬라이더
+    $(document).ready(function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,         // 화면에 보이는 슬라이드 수
+        spaceBetween: 70,         // 슬라이드 사이의 간격
+        loop: true,
+        autoplay: {
+          // 3초마다 슬라이드 전환
+          disableOnInteraction: false,  // 사용자가 슬라이드를 조작해도 오토플레이 유지
+        },            // 슬라이드 무한 루프
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,      // 페이지네이션 클릭 가능
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          600: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          50: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          }
+        }
+      });
+    });
+
+
+
+
+
+    // 아트 갤러리 화면 흔들시 움직이는 폰트
+
+    function MousemoveEffect1__start() {
+      const $window = $(window);
+
+      let windowWidth = $window.width();
+      let windowHeight = $window.height();
+
+      $window.resize(_.throttle(function () {
+        windowWidth = $window.width();
+        windowHeight = $window.height();
+      }, 100));
+
+      $window.resize(_.throttle(function () {
+        MousemoveEffect1__update();
+      }, 100));
+
+      let MousemoveEffect1__$el = null;
+      let MousemoveEffect1__lastPosX = 0;
+      let MousemoveEffect1__lastPosY = 0;
+
+      function MousemoveEffect1__update() {
+        MousemoveEffect1__$el.each(function (index, node) {
+          const $node = $(node);
+          const horRes = $node.data('data-mousemove-effect1-hor-res');
+          const verRes = $node.data('data-mousemove-effect1-ver-res');
+
+          const x = (MousemoveEffect1__lastPosX - (windowWidth / 2)) * horRes;
+          const y = (MousemoveEffect1__lastPosY - (windowHeight / 2)) * verRes;
+          $(node).css('transform', 'translateX(' + x + 'px) translateY(' + y + 'px)');
+        });
+      }
+
+      function MousemoveEffect1__init() {
+        MousemoveEffect1__$el = $('.mousemove-effect-1-el');
+
+        MousemoveEffect1__$el.each(function (index, node) {
+          const $node = $(node);
+          $node.data('data-mousemove-effect1-hor-res', $node.attr('data-mousemove-effect1-hor-res') * 1);
+          $node.data('data-mousemove-effect1-ver-res', $node.attr('data-mousemove-effect1-ver-res') * 1);
+        });
+
+        const MousemoveEffect1__updateThrottled = _.throttle(function () {
+          MousemoveEffect1__update();
+        }, 10);
+
+        $window.mousemove(function (e) {
+          MousemoveEffect1__lastPosX = e.clientX;
+          MousemoveEffect1__lastPosY = e.clientY;
+
+          MousemoveEffect1__updateThrottled();
+        });
+      }
+
+      MousemoveEffect1__init();
+    }
+
+    MousemoveEffect1__start();
+
+    // 관련 사이트 버튼 클릭
+    $(document).ready(function () {
+      $('.icon-btn').on('click', function () {
+        var $btnCont = $('.btn-cont');
+
+        if ($btnCont.hasClass('visible')) {
+          // 숨기기
+          $btnCont.removeClass('visible').hide(); // 애니메이션이 끝나면 display를 none으로 설정
+        } else {
+          // 표시하기
+          $btnCont.show().addClass('visible'); // display를 block으로 설정 후 애니메이션 적용
+        }
+      });
+    });
+
+
+    /* 스크롤시 배경색 폰트색 바뀜*/
+
+    $(window).scroll(function () {
+      var scrollHeight = $(document).scrollTop();
+      var windowHeight = $(window).height();
+      var objectTop = $(".section-4").offset().top;
+      var objectHeight = $(".section-4").outerHeight();
+
+      var middleOfViewport = scrollHeight + windowHeight / 2;
+
+      if (middleOfViewport > objectTop) {
+        $("body").addClass("changed");
+      } else {
+        $("body").removeClass("changed");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
