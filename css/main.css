@@ -363,11 +363,60 @@ a,i, button {cursor: none;}
 /*---반응형 시작-----------------------------------------------------------------------------------*/
 
 /*---------------------------데스크탑 반응형 시작 ----------------------------------*/
-@media (max-width: 1500px){
+@media (max-width: 1750px){
+	.content__text--left {margin-left: 125px;}
 
+	#item-4 .content__text--left {margin-left: 1100px; }
+	#item-4 .content__text--left > img {left: -176%;}
+
+	.section-2 .sub-img {width: 70%; margin-right: 110px;}
+	.section-3 .sub-img {width: 70%; margin-right: 110px;}
+
+	.section-4 .contact {left: 5%;}
+	.section-4 .myname {left: 5%;}
 }
 
 
+
+@media (max-width: 1700px){
+	.content__text--left {margin-left: 100px;}
+	.content__text--left > img {left: 102%;}
+
+	#item-4 .content__text--left {margin-left: 1050px; }
+
+	.section-2 .sub-img { margin-right: 140px;}
+	.section-3 .sub-img { margin-right: 140px;}
+}
+
+
+
+@media (max-width: 1650px){
+	.content__text--left > img {left: 95%;}
+
+	#item-4 .content__text--left {margin-left: 1000px;}
+	#item-4 .content__text--left > img {left: -166%;}
+}
+
+
+
+@media (max-width: 1600px){
+	.content__text--left {margin-left: 50px;}
+	.content__text--left > img {left: 101%; width: 850px;}
+
+	#item-4 .content__text--left > img {width: 850px; left: -159%;}
+	#item-4 .content__text--left {margin-left: 950px;}
+}
+
+
+
+
+
+@media (max-width: 1550px){
+	.content__text--left > img {left: 97%; width: 820px;}
+	#item-4 .content__text--left {margin-left: 900px;}
+  #item-4 .content__text--left > img {width: 820px; left: -149%; }
+
+}
 
 
 @media (max-width: 1500px) {
